@@ -1,0 +1,65 @@
+page-login {
+ 
+  .login-content {
+    color:#ffffff;
+    background-image: url('../../assets/img/FPX_CPQ_login_bckg.jpg');
+    background-size: contain;
+    .scroll-content {
+      overflow-y: hidden;
+    }
+ 
+    .logo-row {
+      margin-top: 65px;
+      text-align: left;
+      font-size: 45px;
+      font-weight: 200;
+      padding-left: 20px;
+    }
+ 
+    .login-box {
+      
+      margin-top: 30px;
+    }
+ 
+    ion-row {
+       align-items: center;
+       text-align: center;
+     }
+ 
+     ion-item {
+         color:#ffffff;
+         font-size: 1.3em;
+         margin-bottom: 10px;
+         box-shadow: none !important;
+         border-bottom: none !important;
+         .text-input{
+          border-color: transparent !important;
+         }
+     }
+ 
+     .signup-col {
+       margin: 0px 16px 0px 16px;
+       padding-bottom: 20px;
+
+     }
+ 
+     .item-inner {
+       border-bottom: 2px  solid #ffffff!important;
+       box-shadow: none !important;
+     }
+ 
+     .submit-btn {
+        color: white;
+        background: transparent;
+        letter-spacing: 3px;       
+        border: 1px solid #ffce00;
+        text-transform: uppercase;
+     }
+ 
+     .register-btn {
+       color: #ffffff;
+       font-size: 0.8em;
+     }
+  }
+ 
+}

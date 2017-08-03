@@ -1,0 +1,140 @@
+
+.object-item {
+	width:80%; 
+	float:left; 
+	line-height:1.2; 
+	padding: 8px 0; 
+	font-size: 12px;
+}
+
+.object-col{
+	float: left;
+	line-height:1.2; 
+	padding: 8px 0; 
+	font-size: 12px;
+}
+
+.object-more-details{
+	position: absolute;
+    right: 8px;
+	height: 55px;
+	width: 50px; 
+	display: flex; 
+	justify-content: flex-end;
+	align-items: center;
+
+	ion-icon {
+		width:30px;
+		padding: 0px 8px; 
+		color: #ffce00;
+	}
+
+	button.popover{
+		padding: 0px !important;
+	}
+	
+	button {
+	 	
+	 	background: transparent;
+	 	position:relative;
+	 	
+	 	span {
+	 		position: absolute;
+	 		color:white;
+	 		font-size: 10px;
+	 		top:-3px;
+	 		left:13px;
+    		
+	 	}
+	 }
+
+	 .popover:after {
+		  content: '\2807';
+		  font-size: 30px;
+		  color: #ffce00;
+	 }
+
+}
+
+.object-details {
+
+	.ion-summary-title {
+		background-color: #ffce00; 	
+		padding: 8px 12px;
+	}
+
+	.ion-summary-item-title {
+	 	font-size:12px;
+		padding: 0px 12px;
+		margin: 0px 8px 0px 0
+	}
+
+	.ion-summary-item-desc {
+	 	font-size:10px;
+		padding: 0px 12px;
+		
+	}
+	.ion-summary-item-desc .label-ios {
+		margin: 0px 8px 15px 0;
+	}
+
+	.ion-summary-item-desc .item-inner {
+		border-bottom: none !important;
+	}
+	.item-block { 
+		min-height: 3rem !important;
+	}
+
+	.ion-summary-item-title .label-ios {
+		margin: 15px 8px 0px 0;
+	}
+
+	ion-label{
+		font-size: 14px;
+		color: #666;
+	}
+	ion-label > span{
+		font-size: 14px;
+		line-height: 22px;
+    	top: 2px !important;
+    	position: relative;
+    	color: #000;
+	}
+	input.text-input{
+		font-size: 14px;
+		line-height: 22px;
+    	top: 2px !important;
+    	position: relative;
+    	color: #000;
+   		background-color: #f3f3f3;
+   		padding: 4px;
+   		margin-left: 0;
+    	margin-right: 0px;
+	}
+
+	.breadcrumbs{
+		margin: 12px;
+	}
+
+
+	.bar-button{
+
+		width: 22% !important;
+		height: 60px;
+
+	}
+
+}
+
+.button-footer > .button-inner {
+		flex-direction: column;
+		color: black;
+		background-color: #ffffff;
+		font-size: 12px;
+		ion-icon {
+			font-size: 25px;
+
+		}
+}
+
+

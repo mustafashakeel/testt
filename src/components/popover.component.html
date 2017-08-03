@@ -1,0 +1,33 @@
+<ion-list class="more-actions">
+    <ion-item *ngIf="actions.goToQuotes" (click)=doGoToQuotes()><span><ion-icon name="document"></ion-icon></span> Go to Quotes </ion-item>
+    <ion-item *ngIf="actions.removeAllQuotes" (click)=doRemoveAllQuotes()><span><ion-icon name="trash"></ion-icon></span> Remove All Quotes</ion-item>
+    <ion-item *ngIf="actions.checkInAllQuotes" (click)=doCheckInAllQuotes()><span><ion-icon name="cloud-upload"></ion-icon></span> Check In All Quotes</ion-item>
+    <ion-item *ngIf="actions.downloadOpportunityOnly" (click)=doDownloadOpportunityOnly()><span><ion-icon name="download"></ion-icon></span> Download Opportunity Only</ion-item>
+    <ion-item *ngIf="actions.downloadAllQuotesReadOnly" (click)=doDownloadAllQuotesReadOnly()><span><ion-icon name="download"></ion-icon></span> Download All Quotes Read Only</ion-item>
+    <ion-item *ngIf="actions.checkOutAllQuotes" (click)=doCheckOutAllQuotes()><span><ion-icon name="lock"></ion-icon></span> Check Out All Quotes</ion-item>
+
+    <ion-item *ngIf="actions.goToOpportunitySummary" (click)=doGoToOpportunitySummary()><span><ion-icon name="arrow-forward"></ion-icon></span> Go To Opportunity Summary</ion-item>
+    <ion-item *ngIf="actions.goToQuoteSummary" (click)=doGoToQuoteSummary()><span><ion-icon name="arrow-forward"></ion-icon></span> Go To Quote Summary</ion-item>
+
+    <ion-item *ngIf="actions.goToProducts" (click)=doGoToProducts()><span><ion-icon name="arrow-forward"></ion-icon></span> Go To Products</ion-item>
+    <ion-item *ngIf="actions.refreshViewOnly" (click)=doRefreshViewOnly()><span><ion-icon name="refresh"></ion-icon></span> Refresh View Only</ion-item>
+    <ion-item *ngIf="actions.copyQuoteOnly" (click)=doCopyQuoteOnly()><span><ion-icon name="copy"></ion-icon></span> Copy Quote Only</ion-item>
+    <ion-item *ngIf="actions.copyQuoteWithProducts" (click)=doCopyQuoteWithProducts()><span><ion-icon name="copy"></ion-icon></span> Copy Quote With Products</ion-item>
+    <ion-item *ngIf="actions.removeFromCPQDrive" (click)=doRemoveFromCPQDrive()><span><ion-icon name="trash"></ion-icon></span> Remove from Briefcase</ion-item>
+    <ion-item *ngIf="actions.checkInQuote" (click)=doCheckInQuote()><span><ion-icon name="cloud-upload"></ion-icon></span> Check In Quote</ion-item>
+    <ion-item *ngIf="actions.viewBOMDetails" (click)=doViewBOMDetails()><span><ion-icon name="document"></ion-icon></span> View BOM Details</ion-item>
+    <ion-item *ngIf="actions.viewProposal" (click)=doViewProposal()><span><ion-icon name="document"></ion-icon></span> View Proposal</ion-item>
+    <ion-item *ngIf="actions.refreshQuote" (click)=doRefreshQuote()><span><ion-icon name="refresh"></ion-icon></span> Refresh Quote</ion-item>
+    <ion-item *ngIf="actions.checkOutQuote" (click)=doCheckOutQuote()><span><ion-icon name="lock"></ion-icon></span> Check Out Quote</ion-item>
+
+    <ion-item *ngIf="actions.updateAvailable" (click)=doUpdateAvailable()><span><ion-icon name="cube"></ion-icon></span> Update Available</ion-item>
+    <ion-item *ngIf="actions.copyProduct" (click)=doCopyProduct()><span><ion-icon name="copy"></ion-icon></span> Copy Product</ion-item>
+    <ion-item *ngIf="actions.editProduct" (click)=doEditProduct()><span><ion-icon name="create"></ion-icon></span> Edit Product</ion-item>
+    <ion-item *ngIf="actions.removeFromQuote" (click)=doRemoveFromQuote()><span><ion-icon name="trash"></ion-icon></span> Remove From Quote</ion-item>
+
+    <ion-item *ngIf="actions.viewNotes" (click)=doViewNotes()><span><ion-icon name="document"></ion-icon></span> View Notes</ion-item>
+    <ion-item *ngIf="actions.downloadCatalog" (click)=doDownloadCatalog()><span><ion-icon name="download"></ion-icon></span> Download Catalog</ion-item>
+    <ion-item *ngIf="actions.removeCatalog" (click)=doRemoveCatalog()><span><ion-icon name="trash"></ion-icon></span> Remove Catalog</ion-item>
+</ion-list>
+
+

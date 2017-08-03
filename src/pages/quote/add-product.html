@@ -1,0 +1,190 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <ion-icon name="back"></ion-icon>
+        </ion-title>
+        <ion-buttons end>
+            <app-statusbar></app-statusbar>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="light-bg pad-bottom">
+    <ion-grid class="inner-header">
+      <ion-row >
+        <ion-col class="title" col-8>
+          {{pageTitle}}
+        </ion-col>
+        <ion-col col-4 class="nav">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- Breadcrumbs: “AccountName”,“Opportunit	Name”,“QuoteName” -->
+    <div class="breadcrumbs" *ngIf="!isEditingProduct" >
+        <div class="line"></div>
+        <a><span *ngIf="selectedSection ==='catalogs'" (click)="goToPage('catalogs')" class="selected"><div class="dot"></div>CATALOG</span></a>
+        <a><span *ngIf="selectedSection !=='catalogs'" (click)="goToPage('catalogs')"><div class="dot"></div>CATALOG</span></a>
+        <a><span *ngIf="selectedSection ==='groups'" (click)="goToPage('groups')" class="selected"><div class="dot"></div>GROUP</span></a>
+        <a><span *ngIf="selectedSection !=='groups'" (click)="goToPage('groups')"><div class="dot"></div>GROUP</span></a>
+        <a><span *ngIf="selectedSection ==='models'" (click)="goToPage('models')" class="selected"><div class="dot"></div>MODEL</span></a>
+        <a><span *ngIf="selectedSection !=='models'" (click)="goToPage('models')"><div class="dot"></div>PRODUCT</span></a>
+        <a><span *ngIf="selectedSection ==='options'" (click)="goToPage('options')" class="selected"><div class="dot"></div>OPTIONS</span></a>
+        <a><span *ngIf="selectedSection !=='options'" (click)="goToPage('options')"><div class="dot"></div>OPTIONS</span></a>
+    </div>
+
+    <!-- CATALOGS -->
+    <div *ngIf="selectedSection === 'catalogs'">
+        <ion-item *ngFor="let catalog of catalogs; let i=index">
+            <div class="quote-item">
+                <div>{{catalog.name}}</div>
+            </div>
+            <div class="object-more-details" (click)="selectCatalog(catalog.id)">
+                <div>
+                    <ion-icon name="ios-arrow-forward"></ion-icon>
+                </div>
+            </div>
+        </ion-item>
+    </div>
+
+    <!-- GROUPS -->
+    <div *ngIf="selectedSection === 'groups'">
+        <ion-item *ngFor="let group of groups; let i=index">
+            <div class="quote-item">
+                <div>{{group.name}}</div>
+            </div>
+            <div class="object-more-details" (click)="selectGroup(group)">
+                <div>
+                    <ion-icon name="ios-arrow-forward"></ion-icon>
+                </div>
+            </div>
+        </ion-item>
+    </div>
+
+    <!-- MODELS -->
+    <div *ngIf="selectedSection === 'models'">
+        <ion-item *ngFor="let model of models; let i=index">
+            <div class="quote-item">
+                <img class="thumbnail" [src]="modelImages[i]">
+                <div>{{model.name}}<ion-icon name="ios-information-circle" (click)="showDescription(model.id)"></ion-icon></div>
+                
+            </div>
+            <div class="object-more-details" (click)="selectModel(model)">
+                <div>
+                    <ion-icon name="ios-arrow-forward"></ion-icon>
+                </div>
+            </div>
+        </ion-item>
+    </div>
+
+    <!-- OPTIONS -->
+    <div *ngIf="selectedSection === 'options' && optionsGroupList !== null">
+
+        <div class="product-model-header">
+            <img class="thumbnail" [src]="modelImage">
+            <span>{{model.name}}</span>
+        </div>
+
+        <ion-item *ngFor="let option of optionsGroupList; let i=index">
+
+            <div class="quote-item">
+                <div>{{option.name}}<ion-icon (click)="showDescription(option.id)" name="ios-information-circle"></ion-icon></div>
+                
+                <ion-icon *ngIf="hasError(option.id)" name="warning"></ion-icon>
+            </div>
+
+            <!--ion-icon *ngIf="option.id === errorId" name="warning"></ion-icon-->
+
+            <div *ngIf="!option.selected" class="object-more-details" (click)="toggleExpandedOption(i)">
+                <div>
+                    <ion-icon name="ios-arrow-down"></ion-icon>
+                </div>
+            </div>
+            <div *ngIf="option.selected" class="object-more-details" (click)="toggleExpandedOption(i)">
+                <div>
+                    <ion-icon name="ios-arrow-up"></ion-icon>
+                </div>
+            </div>
+
+            <div *ngIf="option.selected">
+                <!-- CASE: TEXT -->
+                <ion-list class="case-text" [hidden]="option.expandedInfo.selection_type !== 'text'">
+                    <ion-item *ngFor="let subopt of option.expandedInfo.options; let j=index">
+                        <ion-input [(ngModel)]="subopt['user_input']" type="text" placeholder="Qty."></ion-input>
+                        <ion-label>
+                            <a (click)="showDescription(getErrorMessage(subopt.id))" *ngIf="hasError(subopt.id)">
+                                <ion-icon name="warning"></ion-icon>
+                            </a>
+                            {{subopt.name}} - {{subopt.price}}
+                        </ion-label>
+                    </ion-item>
+                </ion-list>
+
+                <!-- CASE: RADIO-->
+                <ion-list class="case-radio"  [hidden]="option.expandedInfo.selection_type !== 'one_only_one'">
+                    <ion-item *ngFor="let subopt of option.expandedInfo.options; let j=index">
+                        <ion-checkbox class="radio" [checked]="option.expandedInfo.user_input === subopt.name" (click)="markRadioSelection(option.expandedInfo, subopt.name)"></ion-checkbox>
+                        <ion-label>
+                            <a (click)="showDescription(getErrorMessage(subopt.id))" *ngIf="hasError(subopt.id)">
+                                <ion-icon name="warning"></ion-icon>
+                            </a>
+                            {{subopt.name}}
+                        </ion-label>
+
+                    </ion-item>
+                </ion-list>
+
+                <!-- CASE: MULTIPLE SELECTION -->
+                <ion-list class="case-multiple"  [hidden]="option.expandedInfo.selection_type !== 'many'">
+                    <ion-item *ngFor="let subopt of option.expandedInfo.options; let j=index">
+                        <ion-checkbox class="checkbox" (click)="markMultipleSelection(option.expandedInfo, subopt.name)"></ion-checkbox>
+                        <ion-label>
+                            <a (click)="showDescription(getErrorMessage(subopt.id))" *ngIf="hasError(subopt.id)">
+                                <ion-icon name="warning"></ion-icon>
+                            </a>
+                            {{subopt.name}}
+                        </ion-label>
+
+                    </ion-item>
+                </ion-list>
+
+                <!-- CASE: ITEM DROP DOWN -->
+                <ion-list class="case-dropdown"  [hidden]="option.expandedInfo.selection_type !== 'item_drop_down'">
+                    <ion-item *ngFor="let subopt of option.expandedInfo.options; let j=index">
+                        <ion-label>
+                            <a (click)="showDescription(getErrorMessage(subopt.id))" *ngIf="hasError(subopt.id)">
+                                <ion-icon name="warning"></ion-icon>
+                            </a>
+                            {{subopt.name}}
+                        </ion-label>
+                        <ion-select [(ngModel)]="subopt['user_input']">
+                            <ion-option *ngFor="let opt of subopt.options; let k=index" value="{{opt}}">
+                                {{opt}}
+                            </ion-option>
+                        </ion-select>
+
+                    </ion-item>
+                </ion-list>
+
+            </div>
+
+        </ion-item>
+
+    </div>
+
+</ion-content>
+
+
+<ion-buttons class="fixed-bottom-toolbar">
+
+    <button (click)="cancelAndExit()" ion-button small class="button-footer w50">
+       <ion-icon name="close-circle"></ion-icon>
+       <span>Cancel & Exit</span>
+     </button>
+
+    <button (click)="saveAndExit()" ion-button small class="button-footer w50">
+       <ion-icon name="md-arrow-round-forward"></ion-icon>
+       <span>Save & Exit</span>
+     </button>
+
+</ion-buttons>

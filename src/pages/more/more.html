@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-navbar>
+    <ion-label class="header-text">More</ion-label>
+    <ion-buttons end>
+      <app-statusbar></app-statusbar>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <!-- OPPORTUNITIES -->
+    <ion-grid class="inner-header">
+        <ion-row>
+            <ion-col class="title" col-8>
+                LOGOUT
+            </ion-col>
+            <ion-col col-4 class="nav">
+                <button (click)="doLogout()"><span class=""><ion-icon name="exit"></ion-icon></span></button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-list class="ion-list">
+
+        <!-- Accounts, manage product catalogs, settings, mobilde CPQ Help, Report A problem, about us, send feedback to FFX -->
+        <ion-item>
+            <div>
+                <div class="icon-large icon-person"></div>
+                <span>Accounts</span>
+            </div>
+            <div (click)="navigate('accounts')">
+                <ion-icon name="ios-arrow-forward"></ion-icon>
+            </div>
+        </ion-item>
+
+        <ion-item>
+            <div>
+                <div class="icon-large icon-shelf"></div>
+                <span>Manage Product Catalogs</span>
+            </div>
+            <div (click)="navigate('catalogs')">
+                <ion-icon name="ios-arrow-forward"></ion-icon>
+            </div>
+        </ion-item>
+
+        <ion-item>
+            <div>
+                <div class="icon-large icon-gears"></div>
+                <span>Settings</span>
+              </div>
+            <div (click)="navigate()">
+                <ion-icon name="ios-arrow-forward"></ion-icon>
+            </div>
+        </ion-item>
+
+        <ion-item>
+            <div>
+                <div class="icon-large icon-help"></div>
+                <span>Mobile CPQ Help</span>
+            </div>
+            <a (click)="navigate()">
+                <ion-icon name="ios-arrow-forward"></ion-icon>
+            </a>
+        </ion-item>
+
+        <ion-item>
+            <div>
+                <div class="icon-large icon-comment-2"></div>
+                <span>Report A Problem</span>
+            </div>
+            <div (click)="navigate()">
+                <ion-icon name="ios-arrow-forward"></ion-icon>
+            </div>
+        </ion-item>
+
+        <ion-item>
+            <div>
+                <div class="icon-large icon-logo"></div>
+                <span>About Us</span>
+            </div>
+            <div (click)="navigate()">
+                <ion-icon name="ios-arrow-forward"></ion-icon>
+            </div>
+        </ion-item>
+
+        <ion-item>
+            <div>
+                <div class="icon-large icon-comment"></div>
+                <span>Send Feedback to FPX</span>
+            </div>
+            <div (click)="navigate()">
+                <ion-icon name="ios-arrow-forward"></ion-icon>
+            </div>
+        </ion-item>
+
+    </ion-list>
+
+</ion-content>

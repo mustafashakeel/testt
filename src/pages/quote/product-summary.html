@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-navbar>
+    <ion-label class="logo">CPQ</ion-label>
+    <ion-buttons end>
+      <app-statusbar></app-statusbar>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="light-bg pad-bottom">
+
+  <!-- QUOTES -->
+    <ion-grid class="inner-header">
+      <ion-row >
+        <ion-col class="title" col-8>
+          PRODUCT SUMMARY
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="breadcrumbs" style="margin: 16px;">
+    Account
+       <ion-icon name="md-arrow-dropright"></ion-icon>
+       <a>{{quote.opportunityName}}</a>
+       <ion-icon name="md-arrow-dropright"></ion-icon>
+       {{quote.Name}}
+    </div>
+    <!--
+  <ion-col col-12 class="breadcrumbs">
+       
+       <ion-icon name="md-arrow-dropright"></ion-icon>
+       <a (click)="goToOpportunity()">Salient Solutions</a>
+       <ion-icon name="md-arrow-dropright"></ion-icon>
+       Quote for Salient Solutions
+  </ion-col>
+  -->
+
+
+  <table class="products">
+    <thead>
+      <tr>
+        <td class="qty">Qty</td>
+        <td class="name">Name</td>
+        <td class="productId">Product Id</td>
+        <td class="price">Price</td>
+        <td class="more"></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let quoteline of quotelines; let i=index">
+
+        <td class="qty">{{quoteline.Quantity}}</td>
+        <td class="name">
+          {{quoteline.Name}}
+          <ion-icon name="ios-information-circle"></ion-icon>
+        </td>
+        <td class="productId">{{quoteline.OrderCode}}</td>
+        <td class="price">{{quoteline.BaseListPrice}}  {{quoteline.CurrencyIsoCode}}</td>
+        <td class="more"><button class="popover" (click)="showPopover($event, quoteline)"></button></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <div class="total" style="margin: 16px; float: right;">
+       QUOTE TOTAL&nbsp;&nbsp;&nbsp;{{quotes_total}} USD
+  </div>
+
+
+</ion-content>
+
+<ion-buttons class="fixed-bottom-toolbar">
+  
+   <button disabled={{disable}} (click)="doGoToProposal()"ion-button small class="button-footer w25">
+     <ion-icon name="ios-document"></ion-icon>
+      Proposal
+   </button>
+ 
+
+   <button ion-button small (click)="doGoToBOM()" class="button-footer w25">
+     <ion-icon name="ios-list"></ion-icon>
+      BOM Details
+   </button>
+
+   <button ion-button small (click)="doRefresh()" class="button-footer w25">
+     <ion-icon name="ios-refresh"></ion-icon>
+      Refresh All
+   </button>
+
+   <button ion-button small (click)="doAddProduct()" class="button-footer w25">
+     <ion-icon name="add-circle"></ion-icon>
+      Add Product
+   </button>
+
+ </ion-buttons>

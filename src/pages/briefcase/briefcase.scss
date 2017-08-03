@@ -1,0 +1,33 @@
+briefcase {
+	.scroll-content {
+		overflow-y: scroll;
+	}
+
+	.title {
+		margin: 5px 0 !important;
+	}
+
+
+	.opp-item {
+		width:80%; 
+		float:left; 
+		line-height:1.2; 
+		padding: 8px 0; 
+		font-size: 12px;
+	}
+
+	 button {
+	 	background: transparent;
+	 }
+
+
+	 
+	 .popover:after {
+		  content: '\2807';
+		  font-size: 30px;
+		  color: #ffce00;
+	 }
+
+
+}
+

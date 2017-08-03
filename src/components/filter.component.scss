@@ -1,0 +1,114 @@
+filter {
+
+	border-radius: 8px;
+
+	ion-icon{
+		color: #EBBD2B;
+	}
+
+	ion-label{
+		margin: 0px !important;
+	}
+
+	.header{
+		background-color: #58585B;
+		border: 0px;
+	}
+
+	.footer{
+		background-color: #58585B;
+		top: -1px;
+	}
+
+	.group-header{
+		margin-left: 18px;
+   		margin-right: -18px;
+   	    top: 8px;
+	}
+
+	button.action{
+	    height: 30px;
+	    padding: 4px 12px;
+	    background-color: #58585B;
+	    border: 1px solid #B3B3B8;
+	    font-size: 14px !important;
+	    color: #fff;
+	}
+
+	.checkbox-icon{
+		border-radius: 0px !important;
+		border: 1px solid #BCBBC0 !important;
+		background-color: #58585B !important;
+		    margin-left: 24px;
+	}
+	span.label{
+		line-height: 32px;
+   		top: -8px;
+    	position: relative;
+	}
+
+	.item-input > input{
+		color: #000 !important;
+		background-color: #fff !important;
+	}
+
+	.list-header-md{
+		margin-bottom: 0px;
+	}
+	.item-md, .item-ios{
+		font-size: 15px !important;
+		padding-left: 4px !important;
+		color: #fff !important;
+	}
+	.label-md{
+		margin: 0px;
+	}
+	.ion-ios-checkmark{
+		font-size: 44px !important;
+		left: -22px;
+	}
+	.item-block:first-child, .item-block:last-child{
+		border: 0px !important;
+	}
+	.item-inner{
+	}
+	.filter-actions{
+		
+		margin: 0px;
+		padding: 10px;
+		background-color: #58585b !important;
+		color: white;
+
+		.icon{
+			position: absolute;
+			margin-left: 5px;
+			margin-right: 5px;
+			font-size: 20px;
+			color: #ffce00;
+			line-height: 22px;
+			top: 0px;
+			right: 0px;
+		}
+
+
+		.underline {
+			background-color: #727476;
+			height: 1.3px;
+		}
+
+	}
+
+	.scroll-content {
+		overflow-y: hidden;
+	}
+
+	.popover-filter .popover-content {
+			left: 10px !important;
+	    	width: 330px;
+	}
+
+	.popover-arrow::after {
+		background-color: #58585b !important;
+	}
+
+}

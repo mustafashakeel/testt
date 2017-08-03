@@ -1,0 +1,1 @@
+https://hybcpq.fpx.com/rs/18/cpqui?batchsize=20&pagenumber=1&query=Select+Name,OpportunityId,FormattedId,IsPrimary,TotalAmount,CurrencyIsoCode+From+quote+ORDER+BY+Id&resolve-names=true

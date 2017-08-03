@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <ion-label class="header-text">Select Opportunity</ion-label>
+    <ion-buttons end>
+      <app-statusbar></app-statusbar>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="light-bg">
+
+  <!-- OPPORTUNITIES -->
+  <ion-grid class="inner-header">
+      <ion-row >
+        <ion-col class="title" col-8>
+          
+        </ion-col>
+        <ion-col col-4 class="nav">
+          <button><ion-icon name="search"></ion-icon></button>
+
+          
+          <button (click)="showFilter($event)">
+            <ion-icon name="ios-funnel">
+              <span>{{filter_count}}</span>
+            </ion-icon>
+          </button>
+          
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  <ion-list class="ion-list" >
+    
+    <ion-item class="spinner" *ngIf="isLoading">
+      <ion-spinner></ion-spinner>
+    </ion-item>
+
+    <!-- LOOP WITH THE OPPORTUNITIES -->
+    
+    <ion-item *ngFor="let opp of opportunities; let i=index" >
+        <div class="object-item">
+          <div>{{opp.Name}}</div>
+          <div>{{opp.accountName}}</div>
+          <div>{{opp.status}}</div>
+          <div>{{opp.countryName}}</div>
+        </div>
+        <div class="object-more-details">
+          <div><button class="popover" (click)="showPopover($event, opp)"></button></div>
+          <div ><ion-icon name="ios-arrow-forward" (click)="navigate(opp)"></ion-icon></div>
+        </div>
+      
+    </ion-item>
+    
+    <!-- END OF LOOP -->
+  </ion-list>
+
+</ion-content>
+

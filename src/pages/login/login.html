@@ -1,0 +1,62 @@
+
+<ion-content class="login-content" padding>
+
+  <ion-header>
+    <ion-navbar>
+      <ion-label class="header-logo"></ion-label>
+
+       
+        <!-- TODO - replace with app-statusbar -->
+        <!-- for when inactive -->
+      <ion-buttons end>
+        <div *ngIf="settings.onlineMode" class="icon-large icon-world"></div>
+        <div *ngIf="!settings.onlineMode" class="icon-large icon-chain-link"></div>
+      </ion-buttons>
+
+      
+    </ion-navbar>
+  </ion-header>
+  
+
+  <ion-row class="logo-row">
+    
+    <ion-col width-67>
+      <ion-label>
+      Login
+      </ion-label>
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <div class="login-box" *ngIf="!isLoading">
+    <form (ngSubmit)="login()" #registerForm="ngForm">
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+            
+            <ion-item class="inputs">
+              <ion-label class="icon-user"></ion-label>
+              <ion-input  type="text" placeholder="Username" name="username" [(ngModel)]="registerCredentials.username" required></ion-input>
+            </ion-item>
+            
+            <ion-item class="inputs">
+              <ion-label class="icon-lock-user"></ion-label><ion-input  type="password" placeholder="Password" name="password" [(ngModel)]="registerCredentials.password" required></ion-input>
+            </ion-item>
+            
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col class="signup-col">
+          <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid">Login</button>
+        </ion-col>
+      </ion-row>
+      
+    </form>
+    <ion-row>
+        <ion-col class="signup-col">
+          <button ion-button class="register-btn" clear (click)="forgot()">Forgot password?</button>
+        </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

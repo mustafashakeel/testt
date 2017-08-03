@@ -1,0 +1,11 @@
+
+<!-- for when inactive -->
+
+      <div *ngIf="settings.onlineMode" class="icon-large icon-world"></div>
+      <div *ngIf="!settings.onlineMode" class="icon-large icon-chain-link"></div>
+
+      <div *ngIf="notifications.length > 0" class="icon-large icon-bell"><span style="right: 17px; top: 11px;">{{notifications.length}}</span></div>
+      <div *ngIf="notifications.length === 0" class="icon-large icon-bell"></div>
+
+      <div *ngIf="myCPQDriveSummary.checkedOutQuotes > 0" class="icon-large icon-toolbox"><span style="top: 14px; right: 10px; background-color: #000; padding: 0px 4px;">{{myCPQDriveSummary.checkedOutQuotes}}</span></div>
+      <div *ngIf="myCPQDriveSummary.checkedOutQuotes === 0" class="icon-large icon-toolbox"></div>

@@ -1,0 +1,41 @@
+opportunity-details {
+
+	.ion-summary-title {
+		background-color: #ffce00; 	
+		padding: 8px 12px;
+	}
+
+	.ion-summary-item-title {
+	 	font-size:12px;
+		padding: 0px 12px;
+		margin: 0px 8px 0px 0
+	}
+	
+	ion-label > span {
+		font-size: 12px !important;
+		
+	}
+
+	.ion-summary-item-desc {
+		padding: 0px 12px;
+
+		.label {
+			margin: 0px 8px 5px 0 !important;
+		}
+		
+	}
+	.ion-summary-item-desc .label-ios {
+		margin: 0px 8px 15px 0;
+	}
+
+	.ion-summary-item-desc .item-inner {
+		border-bottom: none !important;
+	}
+	.item-block { 
+		min-height: 3rem !important;
+	}
+
+	.ion-summary-item-title .label-ios {
+		margin: 15px 8px 0px 0;
+	}
+}

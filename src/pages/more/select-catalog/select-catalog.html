@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <ion-label class="logo">CPQ</ion-label>
+    <ion-buttons end>
+      <app-statusbar></app-statusbar>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="light-bg">
+
+  <!-- ACCOUNTS -->
+  <ion-grid class="inner-header">
+      <ion-row >
+        <ion-col class="title" col-8>
+          PRODUCT CATALOGS
+        </ion-col>
+        <ion-col col-4 class="nav">
+          <button><span><ion-icon name="search"></ion-icon></span></button>
+          <button (click)="showFilter($event)"><span class=""><ion-icon name="ios-funnel"></ion-icon></span></button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  <ion-list class="ion-list" >
+    
+    <ion-item class="spinner" *ngIf="isLoading">
+      <ion-spinner></ion-spinner>
+    </ion-item>
+    <!-- LOOP WITH THE ACCOUNTS -->
+    
+    <ion-item *ngFor="let catalog of catalogs; let i=index" >
+        <div class="object-item">
+          <div>{{catalog.name}}
+            <span *ngIf="catalog.numQuotesConfigured"></span>
+            <span *ngIf="catalog.hasProductNotes"></span>
+          </div>
+          <div>{{catalog.price_description}} ({{catalog.currency}})</div>
+          <div>{{catalog.start_date}} to {{catalog.expiration_date}}</div>
+          <div *ngIf="catalog.isExpired">
+            <b>EXPIRED<br>
+            Replaced with {{catalog.replacedWithCatalog}}</b>
+          </div>
+        </div>
+        <div class="object-more-details">
+          <div><button class="popover" (click)="showPopover($event, catalog)"></button></div>
+          <!--<div (click)="navigate(catalog)"><ion-icon name="ios-arrow-forward"></ion-icon></div>-->
+        </div>
+      
+    </ion-item>
+    
+    <!-- END OF LOOP -->
+  </ion-list>
+
+</ion-content>

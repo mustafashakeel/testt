@@ -1,0 +1,179 @@
+add-product {
+
+	.title {
+		margin: 5px 0 !important;
+	}
+
+
+	.quote-item {
+		width:80%; 
+		float:left; 
+		font-size: 18px;
+		line-height: 50px;
+
+		ion-icon{
+		    margin-left: 8px;
+		}
+
+		.thumbnail{
+
+    		height: 48px;
+    		width: 48px;
+		    float: left;
+		    margin-right: 12px;
+		}
+	}
+
+	.breadcrumbs{
+
+		margin-top: 14px;
+		margin-bottom: 14px;
+		height: 50px;
+		width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		z-index: 10;
+
+		.line{
+			width: 240px;
+			left: 40px;
+			border-bottom: 2px solid #58585B;
+			height: 2px;
+			position: relative;
+			top: 9px;
+			z-index: 10;
+		}
+
+		span{
+
+			width: 80px;
+			float: left;
+			font-weight: normal;
+			color: #58585B;
+			text-align: center;
+			.dot{
+				height: 16px;
+				width: 16px;
+				border-radius: 12px;
+				background-color: #58585B;
+				margin-left: auto;
+				margin-right: auto;
+				z-index: 20;
+			}
+		}
+		span.selected{
+
+			font-weight: bold;
+			color: #25428F;
+			.dot{
+				background-color: #25428F;
+				z-index: 20;
+			}
+
+		}
+
+	}
+	
+	 button {
+	 	background: transparent;
+	 }
+
+	 .product-model-header{
+
+	 	margin-top: 12px;
+
+	 	span{
+			float:left; 
+			font-size: 24px;
+			line-height: 50px;
+		}
+
+		.thumbnail{
+
+    		height: 64px;
+    		width: 64px;
+		    float: left;
+		    margin-right: 12px;
+		    margin-left: 16px;
+		}
+	 }
+
+	 
+	 .popover:after {
+		  content: '\2807';
+		  font-size: 30px;
+		  color: #ffce00;
+	 }
+
+	 .label{
+	 	margin: 0px !important;
+	 }
+
+	 .case-text{
+
+	 	.item-block{
+	 		background-color: #ddd;
+	 	}
+
+	 	ion-label{
+	 		width: 250px;
+	 	}
+	 	ion-input{
+	 		width: 50px;
+	 		background-color: #fff;
+	 		input{
+	 			margin: 4px;
+	 			width: 50px !important;
+	 		}
+	 	}
+
+	 }
+
+	 .case-radio{
+	 	.item-block{
+	 		background-color: #ddd;
+	 	}
+	 	.checkbox-icon{
+	 		border-radius: 50% !important;
+	 	}
+	 	.checkbox-checked{
+	 		background-color: #fff;
+	 		div{
+	 			border-color: #000 !important;
+	 		}
+	 	}
+
+	 }
+
+	 .case-multiple{
+	 	.item-block{
+	 		background-color: #ddd;
+	 	}
+	 	.checkbox-icon{
+	 		border-radius: 0px;
+	 	}
+	 	.checkbox-checked{
+	 		background-color: #fff;
+	 		div{
+	 			border-color: #000 !important;
+	 		}
+	 	}
+	 }
+
+
+	 .case-dropdown{
+	 	.item-block{
+	 		background-color: #ddd;
+	 	}
+
+	 	ion-select{
+	 	    max-width: 70% !important;
+	 	}
+	 }
+
+
+
+
+}
+

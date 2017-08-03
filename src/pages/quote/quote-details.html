@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title><ion-icon name="back"></ion-icon></ion-title>
+    <ion-buttons end>
+      <app-statusbar></app-statusbar>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content *ngIf="quote" class="fix-header-height light-bg object-details">
+	<div class="ion-summary-title">QUOTE SUMMARY</div>
+
+    <!-- Breadcrumbs: “AccountName”,“Opportunit	Name”,“QuoteName” -->
+    <div class="breadcrumbs">
+       {{quote.accountName}}
+       <ion-icon name="md-arrow-dropright"></ion-icon>
+       <a (click)="goToOpportunity()">{{quote.opportunityName}}</a>
+       <ion-icon name="md-arrow-dropright"></ion-icon>
+       {{quote.quoteName}}
+    </div>
+
+    <div *ngFor="let label of visibleFieldsLabels">
+      <!-- TITLE FOR LABEL -->
+      <ion-item class="ion-summary-item-title">{{label.name}}</ion-item>
+
+      <!-- IF READ ONLY -->
+      <ion-item *ngIf="!isEditable(label) && !isBooleanValue(quote[label.asCamelCase])" class="ion-summary-item-desc">
+        <span>{{quote[label.asCamelCase]}}</span>
+      </ion-item>
+
+      <!-- IF READ ONLY BOOLEAN -->
+      <ion-item *ngIf="!isEditable(label) && isBooleanValue(quote[label.asCamelCase])" class="ion-summary-item-desc">
+        <ion-checkbox disabled class="radio" [checked]="quote[label.asCamelCase] === true"></ion-checkbox>
+      </ion-item>
+
+
+      <!-- IF TEXT FIELD -->
+      <ion-item *ngIf="isEditable(label) && isTextField(label)" class="ion-summary-item-desc">
+          <ion-input [(ngModel)]="editableFields[label.asCamelCase].value" placeholder={{quote[label.asCamelCase]}}>
+         </ion-input>
+      </ion-item> 
+
+      <!-- IF BOOLEAN FIELD -->
+      <ion-item *ngIf="isEditable(label) && isBooleanField(label)" class="ion-summary-item-desc">
+        <ion-checkbox class="radio" [checked]="editableFields[label.asCamelCase].value === true"></ion-checkbox>
+      </ion-item> 
+
+      
+      <!-- IF DROP DOWN -->
+      <ion-item *ngIf="isEditable(label) && isSelectField(label)" class="ion-summary-item-desc">
+        <ion-select [(ngModel)]="editableFields[label.asCamelCase].value">
+          <ion-option *ngFor="let option of editableFields[label.asCamelCase].options" (click)="markSelection(label,option)" value="{{option.value}}">
+            {{option.label}}
+          </ion-option>
+        </ion-select>
+      </ion-item>
+
+    </div>
+   
+</ion-content>
+
+
+<ion-buttons class="fixed-bottom-toolbar">
+
+ <button (click)="loadData()" ion-button small class="button-footer w25">
+   <ion-icon name="ios-close"></ion-icon>
+   Reset
+ </button>
+
+ <button ion-button small (click)="goToProducts()" class="button-footer w25">
+   <ion-icon name="ios-cube-outline"></ion-icon>
+   Products
+ </button>
+
+ <button ion-button small (click)="goToAddProduct()" class="button-footer w25">
+   <ion-icon name="ios-add-circle"></ion-icon>
+   Add Product
+ </button>
+
+ <button ion-button small (click)="saveChanges()" class="button-footer w25">
+   <ion-icon name="md-checkmark"></ion-icon>
+    Save
+ </button>
+
+</ion-buttons>

@@ -1,0 +1,92 @@
+<ion-content>
+
+
+  <ion-list-header class="header">
+    <ion-col col-6>
+              <ion-icon name="ios-funnel"></ion-icon>
+              <span >FILTER BY:</span>
+    </ion-col>
+    <ion-col col-6>
+      <button class="action" (click)="clearAll()">
+                <ion-icon name="trash"></ion-icon>
+                <span >CLEAR ALL</span>
+      </button>
+    </ion-col>
+  </ion-list-header>
+
+
+  <ion-list class="filter-actions scroll-content">
+
+    <!-- QUOTES-->
+    <ion-item>
+      <ion-row (click)="toggleQuotesSelection()">
+        <ion-col class="group-header" col-6>
+          <ion-icon *ngIf="quoteParameters.length > 0"name="checkmark"></ion-icon>
+          <ion-icon *ngIf="quoteParameters.length < 1"name="empty"></ion-icon>
+          <span class="label">Quotes</span>
+         </ion-col>
+        <ion-col col-6>
+          <div *ngIf="isQuotesSelected"><ion-icon name="ios-arrow-up"></ion-icon></div>
+          <div *ngIf="!isQuotesSelected"><ion-icon name="ios-arrow-down"></ion-icon></div>
+        </ion-col>
+      </ion-row>
+      <ion-list *ngIf="isQuotesSelected">
+        <ion-item *ngFor="let q of filter.quotes; let i = index">
+          <ion-label>{{undoCamelCase(q)}}</ion-label>
+          <ion-checkbox (click)="toggleQuotesParameter(q)"></ion-checkbox>
+        </ion-item>
+      </ion-list> 
+    </ion-item>
+
+      <!-- DATE MODIFIED-->
+      <ion-item>
+        <ion-row (click)="toggleDateModifiedSelection()">
+          <ion-col class="group-header" col-6>
+            <ion-icon *ngIf="dateModifiedParameter !== ''"name="checkmark"></ion-icon>
+            <ion-icon *ngIf="dateModifiedParameter == ''"name=""></ion-icon>
+            <span class="label">Date Modified</span>
+          </ion-col>
+          <ion-col col-6>
+            <div *ngIf="isDateModifiedSelected"><ion-icon name="ios-arrow-up"></ion-icon></div>
+            <div *ngIf="!isDateModifiedSelected"><ion-icon name="ios-arrow-down"></ion-icon></div>
+          </ion-col>
+        </ion-row> 
+        <ion-list *ngIf="isDateModifiedSelected" >
+          <ion-item *ngFor="let date of filter.dateModified; let i = index" class="inner">
+            <ion-label>{{undoCamelCase(date)}}</ion-label>
+            <ion-checkbox [checked]="dateModifiedParameter === date" (click)="setDateModifiedParameter(date)"></ion-checkbox>
+          </ion-item>
+        </ion-list>
+      </ion-item>
+
+      <!-- CURRENCY-->
+      <ion-item class="group-header" >
+         <ion-label>Currency</ion-label>
+         <ion-input [(ngModel)]="filter.currency" type="text"></ion-input>
+      </ion-item>
+
+      <!-- OWNER-->
+      <ion-item class="group-header" >
+        <ion-label>Owner</ion-label>
+        <ion-input [(ngModel)]="filter.owner" type="text"></ion-input>
+      </ion-item>
+
+      <!-- STATUS-->
+      <ion-item class="group-header" >
+         <ion-label>Status</ion-label>
+         <ion-input [(ngModel)]="filter.status" type="text"></ion-input>
+      </ion-item>
+
+  </ion-list>
+
+  <ion-item class="footer">
+        <button class="action" style="text-align: center" (click)="applyFilter()">
+          <span>APPLY</span>
+        </button>
+  </ion-item>
+
+
+</ion-content>
+
+
+

@@ -1,0 +1,89 @@
+opportunity-filter{
+
+.filter-actions{
+	
+	margin: 0px;
+	padding: 10px;
+	background-color: #58585b !important;
+	color: white;
+
+	.icon{
+			position: relative;
+			margin-left: 5px;
+			margin-right: 5px;
+			font-size: 20px;
+			color: #ffce00;
+			line-height: 22px;
+			top: 0px;
+		}
+
+
+	.underline {
+		background-color: white;
+		height: 1.3px;
+	}
+
+	.scroll-content {
+		overflow-y: hidden;
+	}
+
+	.list{
+		padding: 0px;
+		margin: -1px 0 0 0;
+		
+		.item-inner {
+		border-bottom: none;
+		}
+		
+		.item {
+		background-color: #58585b;
+		color: white;
+
+			.label {
+				font-size: 15px !important;
+			}
+		}
+
+
+		.label{
+			position: relative;
+			font-size: 20px !important;
+			top: -2px;
+		}
+	}
+	.select-text {
+		min-width: 100px;
+	}
+
+	.select {
+		padding: 7px 8px 5px 16px;
+	}
+
+	.nav {
+		padding: 0;
+		float: right;
+
+		button {
+			margin:0px;
+			background-color: transparent;
+			color:white;
+			font-size: 15px;
+			
+		}
+
+		.icon {
+			font-size: 25px ;
+		}
+	}
+
+	}
+}
+
+.popover-filter .popover-content {
+		left: 10px !important;
+    	width: 330px;
+}
+
+.popover-arrow::after {
+    		background-color: #58585b !important;
+}

@@ -1,0 +1,76 @@
+
+.popover-content{
+	width: 300px !important;
+}
+.more-actions{
+
+	margin: 0px;
+
+	.item{
+		padding: 0px;
+
+		.icon{
+			position: relative;
+			margin-left: 16px;
+			margin-right: 8px;
+			font-size: 24px;
+			color: #FDCB2F;
+			line-height: 22px;
+			top: 4px;
+		}
+
+		.item{
+			padding: 0px;
+			background-color: #58585b !important;
+	 		color: #f6f6f6 !important;
+
+			.icon{
+				position: relative;
+				margin-left: 16px;
+				margin-right: 8px;
+				font-size: 24px;
+				color: #FDCB2F;
+				line-height: 22px;
+				top: 4px;
+			}
+
+			.label{
+				position: relative;
+				font-size: 15px !important;
+				top: -2px;
+			}
+		}
+		color: #fff !important;
+
+	}
+
+
+}
+
+.popover-more .popover-content {
+	right: 40px !important;
+}
+
+
+.action-report{
+	
+	.alert-radio-label{
+		padding: 12px 24px;
+
+		
+	    text-overflow: wrap !important;
+	    white-space: pre-wrap;
+	}
+
+	.alert-sub-title{
+		color: #666;
+	}
+
+	.alert-tappable{
+		min-height: 12px;
+	}
+
+	a[disabled], button[disabled], [ion-button][disabled]{
+		opacity: 0.7;
+	}
+}

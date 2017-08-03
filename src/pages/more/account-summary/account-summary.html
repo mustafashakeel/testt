@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <app-statusbar></app-statusbar>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content *ngIf="accountData" class="fix-header-height light-bg object-details">
+
+  <!-- ACCOUNTS -->
+  <ion-grid class="inner-header">
+      <ion-row >
+        <ion-col class="title" col-8>
+          ACCOUNT SUMMARY
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+  <div *ngFor="let label of visibleFieldsLabels">
+    <!-- TITLE FOR LABEL -->
+    <ion-item class="ion-summary-item-title">{{label.name}}</ion-item>
+
+    <!-- IF READ ONLY -->
+    <ion-item *ngIf="!isEditable(label)" class="ion-summary-item-desc">
+      <span>{{accountData[label.asCamelCase]}}</span>
+    </ion-item>
+
+    <!-- IF TEXT FIELD -->
+    <ion-item *ngIf="isEditable(label) && isTextField(label)" class="ion-summary-item-desc">
+      <ion-input [(ngModel)]="editableFields[label.asCamelCase].value" placeholder={{accountData[label.asCamelCase]}}>
+      </ion-input> d
+    </ion-item>
+
+    <!-- IF DROP DOWN -->
+    <ion-item *ngIf="isEditable(label) && isSelectField(label)" class="ion-summary-item-desc">
+      <ion-select [(ngModel)]="editableFields[label.asCamelCase].value">
+        <ion-option *ngFor="let option of editableFields[label.asCamelCase].options" (click)="markSelection(label,option)">
+          {{option}}
+        </ion-option>
+      </ion-select>
+    </ion-item>
+
+  </div>
+
+</ion-content>
+
+<ion-buttons class="fixed-bottom-toolbar">
+  
+   <button disabled={{disable}} (click)="doGoToOpportunities()"ion-button small class="button-footer w100">
+     <ion-icon name="ios-document"></ion-icon>
+      Opportunities
+   </button>
+
+ </ion-buttons>

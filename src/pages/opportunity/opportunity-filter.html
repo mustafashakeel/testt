@@ -1,0 +1,176 @@
+<ion-list class="filter-actions">
+	<ion-col col-6>
+		        <ion-icon name="ios-funnel"></ion-icon>
+		        <span >FILTER BY:</span>
+	</ion-col>
+	<ion-col class="nav" col-6>
+		<button (click)="clearAll()">
+		        	<ion-icon name="trash"></ion-icon>
+		        	<span >CLEAR ALL</span>
+		</button>
+	</ion-col>
+	<div class="underline"></div>
+
+
+	<ion-list (click)="toggleFilterQuoteSelection()" >
+	    <ion-list>
+	    	
+	       <ion-row class="h4">
+	        <ion-col col-6>
+	          Quotes:
+	        </ion-col>
+	        <ion-col col-6>
+	
+	          <span class="expand-arrow">
+	           <div *ngIf="filters.selected_quote"><ion-icon name="ios-arrow-up"></ion-icon></div>
+	           <div *ngIf="!filters.selected_quote"><ion-icon name="ios-arrow-down"></ion-icon></div>
+	          </span>
+	        </ion-col>
+	       </ion-row>
+	       <div class="underline"></div>
+	    </ion-list>
+	    <ion-content *ngIf="filters.selected_quote">
+	     <!-- List of Alerts to apear when selected -->
+	     <ion-list radio-group [(ngModel)]="filter_quotes" (ionChange)="toggleFilterQuoteChange()">
+	       <ion-item > 
+	         
+	       <ion-label>Expired Catalogs</ion-label><ion-radio value="{{filters.quotes[0]}}"></ion-radio>
+	       </ion-item>
+	       <ion-item > 
+	       <ion-label>Expired Quotes</ion-label><ion-radio value="{{filters.quotes[1]}}"></ion-radio>
+	       </ion-item>
+	       <ion-item > 
+	       <ion-label >Checked out</ion-label><ion-radio value="{{filters.quotes[2]}}"></ion-radio>
+	       </ion-item>
+	       <ion-item > 
+	       <ion-label>View only</ion-label><ion-radio value="{{filters.quotes[3]}}"></ion-radio>
+	       </ion-item>
+	     </ion-list>
+	    </ion-content>
+	  </ion-list>
+
+
+
+
+
+	  <ion-list (click)="toggleFilterDateSelection()">
+	    <ion-list>
+	    	
+	       <ion-row class="h4">
+	        <ion-col col-6>
+	          Date Modified: {{filter_date}}
+	        </ion-col>
+
+	        <ion-col col-6>
+	
+	          <span class="expand-arrow">
+	           <div *ngIf="filters.selected_date"><ion-icon name="ios-arrow-up"></ion-icon></div>
+	           <div *ngIf="!filters.selected_date"><ion-icon name="ios-arrow-down"></ion-icon></div>
+	          </span>
+
+	        </ion-col>
+	       </ion-row>
+	       <div class="underline"></div>
+	    </ion-list>
+	    <ion-content *ngIf="filters.selected_date">
+	     <!-- List of Alerts to apear when selected -->
+	     <ion-list radio-group [(ngModel)]="filter_date">
+	       <ion-item > 
+	         
+	       <ion-label>Today</ion-label><ion-radio value="{{filters.dateModified[0]}}"></ion-radio>
+	       </ion-item>
+	       <ion-item > 
+	       <ion-label>Last 7 days</ion-label><ion-radio value="{{filters.dateModified[1]}}"></ion-radio>
+	       </ion-item>
+	       <ion-item > 
+	       <ion-label>Last 30 days</ion-label><ion-radio value="{{filters.dateModified[2]}}"></ion-radio>
+	       </ion-item>
+	       
+	     </ion-list>
+	   </ion-content>
+
+</ion-list>
+
+
+<ion-list >
+	    <ion-list>
+	    	
+	       <ion-row class="h4">
+	        <ion-col col-6>
+	          Currency:
+	        </ion-col>
+
+	        <ion-col col-6>
+	
+	          	<ion-content *ngIf="filters.selected_currency">
+	     <!-- List of Alerts to apear when selected -->
+				     <ion-select [(ngModel)]="filter_currency" >
+					    <ion-option value="USD">USD</ion-option>
+					    <ion-option value="EURO">EURO</ion-option>
+			  		</ion-select>
+	   			</ion-content>
+
+	        </ion-col>
+	       </ion-row>
+	       <div class="underline"></div>
+	    </ion-list>
+	    
+
+</ion-list>
+
+
+<ion-list >
+	    <ion-list>
+	    	
+	       <ion-row class="h4">
+	        <ion-col col-6>
+	          Owner:
+	        </ion-col>
+
+	        <ion-col col-6>
+	
+	          	<ion-content *ngIf="filters.selected_owner">
+	     <!-- List of Alerts to apear when selected -->
+				     <ion-select [(ngModel)]="filter_onwner">
+					    <ion-option value="Josh">Josh</ion-option>
+					    <ion-option value="Sam">Sam</ion-option>
+			  		</ion-select>
+	   			</ion-content>
+
+	        </ion-col>
+	       </ion-row>
+	       <div class="underline"></div>
+	    </ion-list>
+	    
+
+</ion-list>
+
+<ion-list >
+	    <ion-list>
+	    	
+	       <ion-row class="h4">
+	        <ion-col col-6>
+	          Status:
+	        </ion-col>
+
+	        <ion-col col-6>
+	
+	          	<ion-content *ngIf="filters.selected_status">
+	     <!-- List of Alerts to apear when selected -->
+				     <ion-select [(ngModel)]="filter_status">
+					    <ion-option value="Josh">Josh</ion-option>
+					    <ion-option value="Sam">Sam</ion-option>
+			  		</ion-select>
+	   			</ion-content>
+
+	        </ion-col>
+	       </ion-row>
+	       <div class="underline"></div>
+	    </ion-list>
+	    
+
+</ion-list>
+
+
+
+

@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <ion-label class="header-text">Select Quote</ion-label>
+    <ion-buttons end>
+      <app-statusbar></app-statusbar>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="light-bg">
+
+  <!-- QUOTES -->
+  <ion-grid class="inner-header">
+      <ion-row >
+        <ion-col class="title" col-8>
+          
+        </ion-col>
+        <ion-col col-4 class="nav">
+          <button (click)="showSearch($event)"><span><ion-icon name="search"></ion-icon></span></button>
+          <button (click)="showFilter($event)"><span class=""><ion-icon name="ios-funnel"></ion-icon></span></button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  <ion-list class="ion-list" >
+    
+    <!-- LOOP WITH THE QUOTES -->
+      
+    <ion-item class="spinner" *ngIf="isLoading">
+      <ion-spinner></ion-spinner>
+    </ion-item>
+
+
+    <ion-item *ngFor="let quote of quotes; let i=index" >
+        <div class="object-item">
+          <!--<div>{{quote.accountName}}</div>-->
+          <div class="status-icon">
+            <!--<div *ngIf="quote._isCheckedOut" class="icon-medium icon-lock"></div>-->
+            <ion-icon *ngIf="quote._isCheckedOut" name="lock"></ion-icon>
+            <!--<div *ngIf="quote._isViewOnly" class="icon-medium icon-eye"></div>-->
+            <ion-icon *ngIf="quote._isViewOnly" name="eye"></ion-icon>
+          </div>
+          <div>{{quote.opportunityName}}</div>
+          <div>{{quote.Name}}</div>
+          <div>{{quote.status}}</div>
+        </div>
+        <div class="object-more-details">
+          <div><button class="popover" (click)="showPopover($event, quote)"></button></div>
+          <div><ion-icon name="ios-arrow-forward" (click)="navigate(quote)"></ion-icon></div>
+        </div>
+      
+    </ion-item>
+    
+    <!-- END OF LOOP -->
+  </ion-list>
+
+</ion-content>

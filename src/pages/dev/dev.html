@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar>
+    <ion-label class="header-logo"></ion-label>
+    <ion-buttons *ngIf="isDatabaseReady !== null" end>
+      <!-- TODO - replace with app-statusbar -->
+      <!-- for when inactive -->
+      <div *ngIf="settings.onlineMode" class="icon-large icon-world"></div>
+      <div *ngIf="!settings.onlineMode" class="icon-large icon-chain-link"></div>
+
+      <div *ngIf="notifications.length > 0" class="icon-large icon-bell"><span style="right: 17px; top: 11px;">{{notifications.length}}</span></div>
+      <div *ngIf="notifications.length === 0" class="icon-large icon-bell"></div>
+
+      <div *ngIf="myCPQDriveSummary.checkedOutQuotes > 0" class="icon-large icon-toolbox"><span style="top: 14px; right: 10px; background-color: #000; padding: 0px 4px;">{{myCPQDriveSummary.checkedOutQuotes}}</span></div>
+      <div *ngIf="myCPQDriveSummary.checkedOutQuotes === 0" class="icon-large icon-toolbox"></div>
+
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<!--
+  As	user,	in	the	top-right	header	section,	I	can	see	three	icons,	each	with	two	states	(ACTIVE	&	
+GREY).		Also,	when	Cloud	or	Bell	icon	is	ACTIVE,	overlay	a	count.	
+a. Cloud	Icon			 ACTIVE	when	onlineMode	=	true	(via	LDSP.getOnlineStatus)	
+GREY	when	onlineMode	=	false	
+b. Bell	Icon	
+ACTIVE	when	Notifications	count	>	0	(via	LDSP.getNotifications)	
+GREY	when	Notifications	count	=	0	
+c. Folder	Icon	 ACTIVE	when	checkedOutQuotes	>	0	(LDPS.getMyCPQDriveSummary)	
+GREY	when	checkedOutQuotes	=	0	
+-->
+
+<ion-content *ngIf="isDatabaseReady !== null">
+<br><br><br><br><br>
+  <button ion-button full outline (click)="testLoginUserA()">Test Login User A</button>
+  <button ion-button full outline (click)="testLoginUserB()">Test Login User B</button>
+  <button ion-button full outline (click)="testRefreshAll()">Refresh All</button>
+  <!--<button ion-button full outline (click)="testRefreshQuotes()">Refresh Quotes</button>
+  <button ion-button full outline (click)="testRefreshCatalogs()">Refresh Catalogs</button>
+  <button ion-button full outline (click)="testGetObjects()">Test Get Objects</button>
+  <button ion-button full outline (click)="testFlatOptions()">Test Flat Options</button>
+  -->
+  <button ion-button full outline (click)="testRemoveCatalogFromLocal()">CMA-129: Remove Catalog from Local</button>
+  <button ion-button full outline (click)="testEditProduct()">CMA-199: Edit Product</button>
+  <button ion-button full outline (click)="testAddProductToQuote()">CMA-197: Add Product to Quote</button>
+  <button ion-button full outline (click)="testCreateQuote()">CMA-196: Create Quote</button>
+  <button ion-button full outline (click)="testCopyProduct()">CMA-99: Copy Product</button>
+  <button ion-button full outline (click)="testCopyQuoteWithProducts()">CMA-76: Copy Quote with Products</button>
+  <button ion-button full outline (click)="testCopyQuoteOnly()">CMA-75: Copy Quote Only</button>
+  <button ion-button full outline (click)="testCheckOutQuote()">CMA-71: Check Out Quote</button>
+  <button ion-button full outline (click)="testCheckInQuote()">CMA-188: Check In Quote</button>
+  <button ion-button full outline (click)="testCheckInAllQuotes()">CMA-72: Check In All Quotes</button>
+  <button ion-button full outline (click)="testCheckOutAllQuotes()">CMA-192: Check Out All Quotes</button>
+  <button ion-button full outline (click)="testRefreshViewOnly()">CMA-186: Refresh View Only</button>
+  <button ion-button full outline (click)="testDownloadOpportunityOnly()">Test Download Opportunity Only</button>
+  <button ion-button full outline (click)="testDownloadAllQuotesReadOnly()">Test Download All Quotes Read Only</button>
+  <button ion-button full outline (click)="testRefreshQuote()">Test Refresh Quote</button>
+  <button ion-button full outline (click)="testDownloadCatalog()">Test Download Catalog</button>
+
+  <button ion-button full outline (click)="testGetCatalogs()">Test Get Catalogs</button>
+  <button ion-button full outline (click)="testGetCatalog()">Test Get Catalog</button>
+  <button ion-button full outline (click)="testGetQuote()">Test Get Quote</button>
+  <button ion-button full outline (click)="testSaveQuote()">Test Save Quote</button>
+  <button ion-button full outline (click)="testFindUpdatedCatalogs()">Test Find Updated Catalogs</button>
+
+
+  <button ion-button full outline (click)="testAcquireLock()">Test Acquire Lock</button>
+  <button ion-button full outline (click)="testReleaseLock()">Test Release Lock</button>
+
+
+
+  <button ion-button full outline (click)="goOnline()">Go Online</button>
+  <button ion-button full outline (click)="goOffline()">Go Offline</button>
+  <button ion-button full outline (click)="goHomePage()">Continue to Home</button>
+  <button ion-button full outline (click)="goLoginPage()">Continue to Login</button>
+
+
+ <!-- <button ion-button full outline (click)="presentConfirm()">Test Confirmation</button>
+  <button ion-button full outline (click)="presentToast()">Toast Notification</button>-->
+
+</ion-content>

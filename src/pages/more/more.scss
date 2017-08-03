@@ -1,0 +1,46 @@
+more-page{
+	
+
+	.list{
+		padding: 0px;
+		margin: -1px 0 0 0;
+		
+		.item-inner {
+			border-bottom: none;
+		}
+		
+		.item {
+			background-color: #282828;
+			color: white;
+
+			.label {
+				font-size: 15px !important;
+			}
+		}
+
+
+		.label{
+			position: relative;
+			font-size: 20px !important;
+			top: -2px;
+		}
+
+		.icon-large{
+			float: left;
+		}
+
+		ion-icon{
+			position: absolute;
+			right: 8px;
+			top: 11px;
+		}
+
+		span{
+			float: left;
+			margin-left: 16px;
+			line-height: 40px;
+		}
+
+	}
+
+}

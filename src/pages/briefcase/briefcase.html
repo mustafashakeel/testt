@@ -1,0 +1,111 @@
+<ion-header>
+  <ion-navbar>
+    <ion-label class="header-text">My Briefcase</ion-label>
+    <ion-buttons end>
+      <app-statusbar></app-statusbar>
+    </ion-buttons>
+    <!-- Storage
+    <ion-row>
+      <ion-col col-6>
+        <h3>Storage</h3>
+      </ion-col>
+      <ion-col col-6>
+        <div class="storage-bar">
+          <div class="storage-fg" style="width: 62%;"></div>
+          <div class="storage-bg"></div>
+          <div class="storage-zero">0</div>
+          <div class="storage-max">50</div>
+        </div>
+      </ion-col>
+    </ion-row> -->
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="light-bg">
+
+  <!-- OPPORTUNITIES -->
+  <ion-grid class="inner-header">
+    <ion-row>
+      <ion-col class="title" col-8>
+        
+      </ion-col>
+      <ion-col col-4 class="nav">
+        <!--<button><span><ion-icon name="search"></ion-icon></span></button>-->
+        <!--<button (click)="showFilter($event)"><span class=""><ion-icon name="ios-funnel"></ion-icon></span></button>-->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list class="ion-list">
+
+    <ion-item class="spinner" *ngIf="isLoading">
+      <ion-spinner></ion-spinner>
+    </ion-item>
+
+    <!-- LOOP WITH THE OPPORTUNITIES -->
+
+    <ion-item *ngFor="let item of items; let i=index">
+
+      <ion-row>
+        <div class="object-item">
+            <div class="object-col w50">
+              <div>{{item.accountName}}</div>
+              <div>{{item.Name}}</div>
+            </div>
+            <div class="object-col w50">
+              <div>{{item.lastModified.date}}</div>
+              <div>{{item.lastModified.time}}</div>
+            </div>
+        </div>
+        <div class="object-more-details">
+          <div><button class="popover" (click)="showPopover($event, 'opportunity',item)"></button></div>
+          <span (click)="toggleSelection(i)" class="expand-arrow">
+            <div *ngIf="item.selected"><ion-icon name="ios-arrow-up"></ion-icon></div>
+            <div *ngIf="!item.selected"><ion-icon name="ios-arrow-down"></ion-icon></div>
+          </span>
+        </div>
+      </ion-row>
+
+      <ion-list *ngIf="item.selected">
+        <ion-item *ngFor="let quote of item.quotes" style="background-color: #f3f3f3;">
+          <ion-row>
+            <div class="object-item">
+              <div class="object-col w50">
+                <div *ngIf="!quote.readOnly"><ion-icon name="eye"></ion-icon></div>
+                <div *ngIf="quote.readOnly"><ion-icon name="lock"></ion-icon></div>
+                <div>{{quote.Name}}</div>
+                <div>{{quote.FormattedId}}</div>
+              </div>
+              <div class="object-col w50">
+                <div>{{item.lastModified.date}}</div>
+                <div>{{item.lastModified.time}}</div>
+              </div>
+            </div>
+            <div class="object-more-details">
+              <div><button class="popover" (click)="showPopover($event, 'quote', quote)"></button></div>
+            </div>
+          </ion-row>
+        </ion-item>
+      </ion-list>
+
+    </ion-item>
+
+
+    <!--ion-row class="h3">
+        <ion-col col-6>
+          Expired Quote
+        </ion-col>
+        <ion-col col-6>
+          {{alerts.count}} ALERT{{alerts.pluralize}}
+          <span class="expand-arrow">
+           <div *ngIf="alerts.selected"><ion-icon name="ios-arrow-up"></ion-icon></div>
+           <div *ngIf="!alerts.selected"><ion-icon name="ios-arrow-down"></ion-icon></div>
+          </span>
+        </ion-col>
+       </ion-row-->
+
+    <!-- END OF LOOP -->
+  </ion-list>
+
+</ion-content>
