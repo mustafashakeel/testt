@@ -1,0 +1,605 @@
+{
+	"pageLayout": {
+		"updateable": true,
+		"isDefault": true,
+		"name": "quote_layout",
+		"label": "quote_layout",
+		"pageLayoutSections": [
+			{
+				"sequence": 1,
+				"name": "quote_information",
+				"label": "Quote Information",
+				"rows": [
+					{
+						"columns": [
+							{
+								"updateable": false,
+								"filterable": true,
+								"apiName": "FormattedId",
+								"precision": 0,
+								"custom": false,
+								"length": 100,
+								"scale": 0,
+								"description": "This is the formatted ID (including the base and the suffix) of the quote.",
+								"nameField": false,
+								"label": "Quote ID",
+								"type": "string",
+								"nillable": false,
+								"restrictedPicklist": false,
+								"createable": false,
+								"name": "FormattedId",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Name",
+								"precision": 0,
+								"custom": false,
+								"length": 255,
+								"scale": 0,
+								"description": "This is the name of this quote",
+								"nameField": true,
+								"label": "Quote Name",
+								"type": "string",
+								"nillable": false,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "Name",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Description",
+								"precision": 0,
+								"custom": false,
+								"length": 250,
+								"scale": 0,
+								"description": "This is the description of this quote",
+								"nameField": false,
+								"label": "Description",
+								"type": "string",
+								"nillable": true,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "Description",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"picklistValues": [
+									{
+										"defaultValue": true,
+										"controllingValues": [],
+										"label": "Sales",
+										"isActive": true,
+										"value": "Sales"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Eval",
+										"isActive": true,
+										"value": "Eval"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Loan to Sale",
+										"isActive": true,
+										"value": "Loan to Sale"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Rental",
+										"isActive": true,
+										"value": "Rental"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Invoice Only",
+										"isActive": true,
+										"value": "Invoice Only"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Concession",
+										"isActive": true,
+										"value": "Concession"
+									}
+								],
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Quote_Type__c",
+								"precision": 0,
+								"custom": true,
+								"length": 100,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Quote Type",
+								"type": "picklist",
+								"nillable": true,
+								"restrictedPicklist": true,
+								"createable": true,
+								"name": "Quote_Type__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": false,
+								"filterable": false,
+								"apiName": "IsPrimary",
+								"precision": 0,
+								"custom": false,
+								"length": 0,
+								"scale": 0,
+								"description": "This field tells if this quote is the primary quote for the opportunity",
+								"nameField": false,
+								"label": "Primary",
+								"type": "boolean",
+								"nillable": true,
+								"restrictedPicklist": false,
+								"createable": false,
+								"name": "IsPrimary",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"picklistValues": [
+									{
+										"defaultValue": true,
+										"controllingValues": [],
+										"label": "In Progress",
+										"isActive": true,
+										"value": "In Progress"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Submitted for Approval",
+										"isActive": true,
+										"value": "Submitted for Approval"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Approved",
+										"isActive": true,
+										"value": "Approved"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Order Placed",
+										"isActive": true,
+										"value": "Order Placed"
+									}
+								],
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Workflow_Status__c",
+								"precision": 0,
+								"custom": true,
+								"length": 100,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Workflow Status",
+								"type": "picklist",
+								"nillable": true,
+								"restrictedPicklist": true,
+								"createable": true,
+								"name": "Workflow_Status__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": true,
+								"apiName": "ExpirationDate",
+								"helpText": "Quote Expiration Date is the date through which this quote is valid. It is defaulted to what the System Administrator set up in the OnDemand Setup. You can change it by either entering the date in the input area or clicking the calendar icon next to it to choose the desired date.",
+								"precision": 0,
+								"custom": false,
+								"length": 0,
+								"scale": 0,
+								"description": "This is the date through which this quote is valid.",
+								"nameField": false,
+								"label": "Expiration Date",
+								"type": "date",
+								"nillable": false,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "ExpirationDate",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"picklistValues": [
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Brazilian Real BRL",
+										"isActive": true,
+										"value": "Brazilian Real BRL"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Canadian Dollar CAN",
+										"isActive": true,
+										"value": "Canadian Dollar CAN"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Mexican Peso MXN",
+										"isActive": true,
+										"value": "Mexican Peso MXN"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "South African Rand ZAR",
+										"isActive": true,
+										"value": "South African Rand ZAR"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "US Dollar USD",
+										"isActive": true,
+										"value": "US Dollar USD"
+									}
+								],
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Currency__c",
+								"precision": 0,
+								"custom": true,
+								"length": 100,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Currency",
+								"type": "picklist",
+								"nillable": true,
+								"restrictedPicklist": true,
+								"createable": true,
+								"name": "Currency__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": false,
+								"filterable": true,
+								"apiName": "TotalAmount",
+								"precision": 18,
+								"custom": false,
+								"length": 0,
+								"scale": 2,
+								"description": "The total amount on this quote including the selling price for all included products, charges, fees, and less discounts.",
+								"nameField": false,
+								"label": "Total Amount",
+								"type": "currency",
+								"nillable": false,
+								"restrictedPicklist": false,
+								"createable": false,
+								"name": "TotalAmount",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Lead_Time__c",
+								"precision": 4,
+								"custom": true,
+								"length": 0,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Lead Time (Days)",
+								"type": "double",
+								"nillable": true,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "Lead_Time__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"picklistValues": [
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Africa",
+										"isActive": true,
+										"value": "Africa"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Brazil",
+										"isActive": true,
+										"value": "Brazil"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Canada",
+										"isActive": true,
+										"value": "Canada"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Mexico",
+										"isActive": true,
+										"value": "Mexico"
+									},
+									{
+										"defaultValue": true,
+										"controllingValues": [],
+										"label": "United States",
+										"isActive": true,
+										"value": "United States"
+									}
+								],
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Install_Country__c",
+								"precision": 0,
+								"custom": true,
+								"length": 100,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Install Country",
+								"type": "picklist",
+								"nillable": true,
+								"restrictedPicklist": true,
+								"createable": true,
+								"name": "Install_Country__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Custom_Delivery__c",
+								"precision": 0,
+								"custom": true,
+								"length": 0,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Custom Delivery",
+								"type": "boolean",
+								"nillable": true,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "Custom_Delivery__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"picklistValues": [
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Freight",
+										"isActive": true,
+										"value": "Freight"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Air",
+										"isActive": true,
+										"value": "Air"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Land",
+										"isActive": true,
+										"value": "Land"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Rail",
+										"isActive": true,
+										"value": "Rail"
+									}
+								],
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Delivery_Method__c",
+								"precision": 0,
+								"custom": true,
+								"length": 100,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Delivery Method",
+								"type": "picklist",
+								"nillable": true,
+								"restrictedPicklist": true,
+								"createable": true,
+								"name": "Delivery_Method__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": false,
+								"filterable": true,
+								"apiName": "ProductsAmount",
+								"precision": 18,
+								"custom": false,
+								"length": 0,
+								"scale": 2,
+								"description": "The sum of total selling prices for the included quote lines in this quote.",
+								"nameField": false,
+								"label": "Total Products",
+								"type": "currency",
+								"nillable": false,
+								"restrictedPicklist": false,
+								"createable": false,
+								"name": "ProductsAmount",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Requested_By__c",
+								"precision": 0,
+								"custom": true,
+								"length": 0,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Requested By",
+								"type": "date",
+								"nillable": true,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "Requested_By__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": false,
+								"apiName": "Quote_Comments__c",
+								"precision": 0,
+								"custom": true,
+								"length": 255,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Quote Comments",
+								"type": "textarea",
+								"nillable": true,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "Quote_Comments__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false,
+								"lines": 5
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": false,
+								"apiName": "Note",
+								"precision": 0,
+								"custom": false,
+								"length": 2000,
+								"scale": 0,
+								"description": "This is the note field of this quote",
+								"nameField": false,
+								"label": "Note",
+								"type": "textarea",
+								"nillable": true,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "Note",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

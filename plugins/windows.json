@@ -1,0 +1,33 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "FPX CPQ"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "FPX CPQ"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "FPX CPQ"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "FPX CPQ"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "FPX CPQ"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "FPX CPQ"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "FPX CPQ"
+        }
+    },
+    "dependent_plugins": {}
+}

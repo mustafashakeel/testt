@@ -1,0 +1,1050 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>LAPTOP-5P17MVBI</Machine>
+    <WindowsUser>msqsh</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>367c9750-57ed-11e7-9a17-216691775c4f</PackageIdentityName>
+    <PackageIdentityPublisher>CN=%24username%24</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\msqsh\Desktop\new\fpx\platforms\windows\build\phone\bld\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\build\phone\Debug\AnyCPU\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\images\SplashScreenPhone.scale-240.png">
+      <PackagePath>images\SplashScreenPhone.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\images\Square150x150Logo.scale-240.png">
+      <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\images\Square44x44Logo.scale-100.png">
+      <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\images\Square44x44Logo.scale-240.png">
+      <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\images\Square71x71Logo.scale-100.png">
+      <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\images\Square71x71Logo.scale-240.png">
+      <PackagePath>images\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\images\StoreLogo.scale-240.png">
+      <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\images\Wide310x150Logo.scale-240.png">
+      <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\global\logo.png">
+      <PackagePath>www\assets\global\logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\global\main-dark.png">
+      <PackagePath>www\assets\global\main-dark.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\global\main-darker.png">
+      <PackagePath>www\assets\global\main-darker.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-alarm-clock.png">
+      <PackagePath>www\assets\icon\white\icon-alarm-clock.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-arrow-back.png">
+      <PackagePath>www\assets\icon\white\icon-arrow-back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-arrow-down.png">
+      <PackagePath>www\assets\icon\white\icon-arrow-down.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-arrow-forward.png">
+      <PackagePath>www\assets\icon\white\icon-arrow-forward.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-arrow-reload.png">
+      <PackagePath>www\assets\icon\white\icon-arrow-reload.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-arrow-return.png">
+      <PackagePath>www\assets\icon\white\icon-arrow-return.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-arrow-rewind.png">
+      <PackagePath>www\assets\icon\white\icon-arrow-rewind.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-arrow-up.png">
+      <PackagePath>www\assets\icon\white\icon-arrow-up.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-award.png">
+      <PackagePath>www\assets\icon\white\icon-award.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-barcode.png">
+      <PackagePath>www\assets\icon\white\icon-barcode.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-battery-charging.png">
+      <PackagePath>www\assets\icon\white\icon-battery-charging.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-battery-full.png">
+      <PackagePath>www\assets\icon\white\icon-battery-full.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-battery-low.png">
+      <PackagePath>www\assets\icon\white\icon-battery-low.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-bell.png">
+      <PackagePath>www\assets\icon\white\icon-bell.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-book-bookmarked.png">
+      <PackagePath>www\assets\icon\white\icon-book-bookmarked.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-book-text-bookmarked.png">
+      <PackagePath>www\assets\icon\white\icon-book-text-bookmarked.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-book-text.png">
+      <PackagePath>www\assets\icon\white\icon-book-text.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-book.png">
+      <PackagePath>www\assets\icon\white\icon-book.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-bookmark.png">
+      <PackagePath>www\assets\icon\white\icon-bookmark.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-box-courier.png">
+      <PackagePath>www\assets\icon\white\icon-box-courier.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-box-open.png">
+      <PackagePath>www\assets\icon\white\icon-box-open.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-calculator.png">
+      <PackagePath>www\assets\icon\white\icon-calculator.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-calendar.png">
+      <PackagePath>www\assets\icon\white\icon-calendar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-camera.png">
+      <PackagePath>www\assets\icon\white\icon-camera.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-car.png">
+      <PackagePath>www\assets\icon\white\icon-car.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-caret-back.png">
+      <PackagePath>www\assets\icon\white\icon-caret-back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-caret-down.png">
+      <PackagePath>www\assets\icon\white\icon-caret-down.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-caret-forward.png">
+      <PackagePath>www\assets\icon\white\icon-caret-forward.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-caret-up.png">
+      <PackagePath>www\assets\icon\white\icon-caret-up.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-cart.png">
+      <PackagePath>www\assets\icon\white\icon-cart.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-chain-link.png">
+      <PackagePath>www\assets\icon\white\icon-chain-link.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-chat.png">
+      <PackagePath>www\assets\icon\white\icon-chat.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-check.png">
+      <PackagePath>www\assets\icon\white\icon-check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-circle-caret-back.png">
+      <PackagePath>www\assets\icon\white\icon-circle-caret-back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-circle-caret-down.png">
+      <PackagePath>www\assets\icon\white\icon-circle-caret-down.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-circle-caret-forward.png">
+      <PackagePath>www\assets\icon\white\icon-circle-caret-forward.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-circle-caret-up.png">
+      <PackagePath>www\assets\icon\white\icon-circle-caret-up.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-circle-check.png">
+      <PackagePath>www\assets\icon\white\icon-circle-check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-circle-close.png">
+      <PackagePath>www\assets\icon\white\icon-circle-close.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-circle-help.png">
+      <PackagePath>www\assets\icon\white\icon-circle-help.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-circle-minus.png">
+      <PackagePath>www\assets\icon\white\icon-circle-minus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-circle-plus.png">
+      <PackagePath>www\assets\icon\white\icon-circle-plus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-clipboard-list.png">
+      <PackagePath>www\assets\icon\white\icon-clipboard-list.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-clipboard-pencil.png">
+      <PackagePath>www\assets\icon\white\icon-clipboard-pencil.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-clock.png">
+      <PackagePath>www\assets\icon\white\icon-clock.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-close.png">
+      <PackagePath>www\assets\icon\white\icon-close.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-cloud-download.png">
+      <PackagePath>www\assets\icon\white\icon-cloud-download.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-cloud-drive.png">
+      <PackagePath>www\assets\icon\white\icon-cloud-drive.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-cloud-upload.png">
+      <PackagePath>www\assets\icon\white\icon-cloud-upload.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-cloud.png">
+      <PackagePath>www\assets\icon\white\icon-cloud.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-comment-2.png">
+      <PackagePath>www\assets\icon\white\icon-comment-2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-comment.png">
+      <PackagePath>www\assets\icon\white\icon-comment.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-comments.png">
+      <PackagePath>www\assets\icon\white\icon-comments.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-compass.png">
+      <PackagePath>www\assets\icon\white\icon-compass.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-currency-dollar.png">
+      <PackagePath>www\assets\icon\white\icon-currency-dollar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-currency-euro.png">
+      <PackagePath>www\assets\icon\white\icon-currency-euro.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-currency-gbp.png">
+      <PackagePath>www\assets\icon\white\icon-currency-gbp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-currency-yuan.png">
+      <PackagePath>www\assets\icon\white\icon-currency-yuan.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-device-desktop.png">
+      <PackagePath>www\assets\icon\white\icon-device-desktop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-device-laptop.png">
+      <PackagePath>www\assets\icon\white\icon-device-laptop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-device-phone.png">
+      <PackagePath>www\assets\icon\white\icon-device-phone.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-device-tablet.png">
+      <PackagePath>www\assets\icon\white\icon-device-tablet.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-directions.png">
+      <PackagePath>www\assets\icon\white\icon-directions.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-disk.png">
+      <PackagePath>www\assets\icon\white\icon-disk.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-dna.png">
+      <PackagePath>www\assets\icon\white\icon-dna.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-document-add.png">
+      <PackagePath>www\assets\icon\white\icon-document-add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-document-checked.png">
+      <PackagePath>www\assets\icon\white\icon-document-checked.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-document-remove.png">
+      <PackagePath>www\assets\icon\white\icon-document-remove.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-document-text-edit.png">
+      <PackagePath>www\assets\icon\white\icon-document-text-edit.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-document-text.png">
+      <PackagePath>www\assets\icon\white\icon-document-text.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-document-x.png">
+      <PackagePath>www\assets\icon\white\icon-document-x.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-document.png">
+      <PackagePath>www\assets\icon\white\icon-document.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-documents-dollar.png">
+      <PackagePath>www\assets\icon\white\icon-documents-dollar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-documents.png">
+      <PackagePath>www\assets\icon\white\icon-documents.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-download.png">
+      <PackagePath>www\assets\icon\white\icon-download.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-drive.png">
+      <PackagePath>www\assets\icon\white\icon-drive.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-envelope-open.png">
+      <PackagePath>www\assets\icon\white\icon-envelope-open.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-envelope-open2.png">
+      <PackagePath>www\assets\icon\white\icon-envelope-open2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-envelope.png">
+      <PackagePath>www\assets\icon\white\icon-envelope.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-envelopes.png">
+      <PackagePath>www\assets\icon\white\icon-envelopes.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-export.png">
+      <PackagePath>www\assets\icon\white\icon-export.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-eye-false.png">
+      <PackagePath>www\assets\icon\white\icon-eye-false.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-eye.png">
+      <PackagePath>www\assets\icon\white\icon-eye.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-factory.png">
+      <PackagePath>www\assets\icon\white\icon-factory.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-first-aid-kit.png">
+      <PackagePath>www\assets\icon\white\icon-first-aid-kit.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-first-place.png">
+      <PackagePath>www\assets\icon\white\icon-first-place.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-flag.png">
+      <PackagePath>www\assets\icon\white\icon-flag.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-folder-add.png">
+      <PackagePath>www\assets\icon\white\icon-folder-add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-folder-checked.png">
+      <PackagePath>www\assets\icon\white\icon-folder-checked.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-folder-remove.png">
+      <PackagePath>www\assets\icon\white\icon-folder-remove.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-folder-x.png">
+      <PackagePath>www\assets\icon\white\icon-folder-x.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-folder.png">
+      <PackagePath>www\assets\icon\white\icon-folder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-folders.png">
+      <PackagePath>www\assets\icon\white\icon-folders.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-game-controls.png">
+      <PackagePath>www\assets\icon\white\icon-game-controls.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-gauge.png">
+      <PackagePath>www\assets\icon\white\icon-gauge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-gears.png">
+      <PackagePath>www\assets\icon\white\icon-gears.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-gender-female.png">
+      <PackagePath>www\assets\icon\white\icon-gender-female.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-gender-male.png">
+      <PackagePath>www\assets\icon\white\icon-gender-male.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-globe.png">
+      <PackagePath>www\assets\icon\white\icon-globe.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-graduate.png">
+      <PackagePath>www\assets\icon\white\icon-graduate.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-graph-bar-line.png">
+      <PackagePath>www\assets\icon\white\icon-graph-bar-line.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-graph-bar.png">
+      <PackagePath>www\assets\icon\white\icon-graph-bar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-graph-line.png">
+      <PackagePath>www\assets\icon\white\icon-graph-line.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-hammer.png">
+      <PackagePath>www\assets\icon\white\icon-hammer.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-hand-stop.png">
+      <PackagePath>www\assets\icon\white\icon-hand-stop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-harddrive.png">
+      <PackagePath>www\assets\icon\white\icon-harddrive.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-headset.png">
+      <PackagePath>www\assets\icon\white\icon-headset.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-heart-broken.png">
+      <PackagePath>www\assets\icon\white\icon-heart-broken.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-heart.png">
+      <PackagePath>www\assets\icon\white\icon-heart.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-help.png">
+      <PackagePath>www\assets\icon\white\icon-help.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-hourglass.png">
+      <PackagePath>www\assets\icon\white\icon-hourglass.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-house.png">
+      <PackagePath>www\assets\icon\white\icon-house.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-import.png">
+      <PackagePath>www\assets\icon\white\icon-import.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-inbox.png">
+      <PackagePath>www\assets\icon\white\icon-inbox.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-info.png">
+      <PackagePath>www\assets\icon\white\icon-info.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-key.png">
+      <PackagePath>www\assets\icon\white\icon-key.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-keyboard.png">
+      <PackagePath>www\assets\icon\white\icon-keyboard.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-lightbulb.png">
+      <PackagePath>www\assets\icon\white\icon-lightbulb.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-list.png">
+      <PackagePath>www\assets\icon\white\icon-list.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-lock-open.png">
+      <PackagePath>www\assets\icon\white\icon-lock-open.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-lock.png">
+      <PackagePath>www\assets\icon\white\icon-lock.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-mail-sent.png">
+      <PackagePath>www\assets\icon\white\icon-mail-sent.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-map-marker.png">
+      <PackagePath>www\assets\icon\white\icon-map-marker.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-map-marker2.png">
+      <PackagePath>www\assets\icon\white\icon-map-marker2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-map.png">
+      <PackagePath>www\assets\icon\white\icon-map.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-mic.png">
+      <PackagePath>www\assets\icon\white\icon-mic.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-minus.png">
+      <PackagePath>www\assets\icon\white\icon-minus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-molecule.png">
+      <PackagePath>www\assets\icon\white\icon-molecule.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-money-bills.png">
+      <PackagePath>www\assets\icon\white\icon-money-bills.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-mouse.png">
+      <PackagePath>www\assets\icon\white\icon-mouse.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-no.png">
+      <PackagePath>www\assets\icon\white\icon-no.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-node-graph.png">
+      <PackagePath>www\assets\icon\white\icon-node-graph.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-nodes-unlinked.png">
+      <PackagePath>www\assets\icon\white\icon-nodes-unlinked.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-notebook-pencil.png">
+      <PackagePath>www\assets\icon\white\icon-notebook-pencil.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-notebook.png">
+      <PackagePath>www\assets\icon\white\icon-notebook.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-paperclip.png">
+      <PackagePath>www\assets\icon\white\icon-paperclip.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-pcb.png">
+      <PackagePath>www\assets\icon\white\icon-pcb.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-pen.png">
+      <PackagePath>www\assets\icon\white\icon-pen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-pencil-ruler.png">
+      <PackagePath>www\assets\icon\white\icon-pencil-ruler.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-pencil-ruler2.png">
+      <PackagePath>www\assets\icon\white\icon-pencil-ruler2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-people.png">
+      <PackagePath>www\assets\icon\white\icon-people.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-person-tie.png">
+      <PackagePath>www\assets\icon\white\icon-person-tie.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-person.png">
+      <PackagePath>www\assets\icon\white\icon-person.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-photo-landscape.png">
+      <PackagePath>www\assets\icon\white\icon-photo-landscape.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-photos-landscape.png">
+      <PackagePath>www\assets\icon\white\icon-photos-landscape.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-pie-chart.png">
+      <PackagePath>www\assets\icon\white\icon-pie-chart.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-pin-2.png">
+      <PackagePath>www\assets\icon\white\icon-pin-2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-pin.png">
+      <PackagePath>www\assets\icon\white\icon-pin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-plug-unplugged.png">
+      <PackagePath>www\assets\icon\white\icon-plug-unplugged.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-plus.png">
+      <PackagePath>www\assets\icon\white\icon-plus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-postcard.png">
+      <PackagePath>www\assets\icon\white\icon-postcard.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-postcards.png">
+      <PackagePath>www\assets\icon\white\icon-postcards.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-power-onoff.png">
+      <PackagePath>www\assets\icon\white\icon-power-onoff.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-power.png">
+      <PackagePath>www\assets\icon\white\icon-power.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-presentation.png">
+      <PackagePath>www\assets\icon\white\icon-presentation.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-print.png">
+      <PackagePath>www\assets\icon\white\icon-print.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-radar.png">
+      <PackagePath>www\assets\icon\white\icon-radar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-radio.png">
+      <PackagePath>www\assets\icon\white\icon-radio.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-report-pencil.png">
+      <PackagePath>www\assets\icon\white\icon-report-pencil.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-report.png">
+      <PackagePath>www\assets\icon\white\icon-report.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-settings-2.png">
+      <PackagePath>www\assets\icon\white\icon-settings-2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-settings.png">
+      <PackagePath>www\assets\icon\white\icon-settings.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-share.png">
+      <PackagePath>www\assets\icon\white\icon-share.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-share2.png">
+      <PackagePath>www\assets\icon\white\icon-share2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-shelf.png">
+      <PackagePath>www\assets\icon\white\icon-shelf.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-signature.png">
+      <PackagePath>www\assets\icon\white\icon-signature.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-stack.png">
+      <PackagePath>www\assets\icon\white\icon-stack.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-star.png">
+      <PackagePath>www\assets\icon\white\icon-star.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-sun.png">
+      <PackagePath>www\assets\icon\white\icon-sun.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-tag.png">
+      <PackagePath>www\assets\icon\white\icon-tag.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-target.png">
+      <PackagePath>www\assets\icon\white\icon-target.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-thought.png">
+      <PackagePath>www\assets\icon\white\icon-thought.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-tie.png">
+      <PackagePath>www\assets\icon\white\icon-tie.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-timer-2.png">
+      <PackagePath>www\assets\icon\white\icon-timer-2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-timer.png">
+      <PackagePath>www\assets\icon\white\icon-timer.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-toolbox.png">
+      <PackagePath>www\assets\icon\white\icon-toolbox.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-tools.png">
+      <PackagePath>www\assets\icon\white\icon-tools.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-touch.png">
+      <PackagePath>www\assets\icon\white\icon-touch.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-trash-closed.png">
+      <PackagePath>www\assets\icon\white\icon-trash-closed.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-trash-open.png">
+      <PackagePath>www\assets\icon\white\icon-trash-open.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-trash-recycle.png">
+      <PackagePath>www\assets\icon\white\icon-trash-recycle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-trash-x.png">
+      <PackagePath>www\assets\icon\white\icon-trash-x.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-truck.png">
+      <PackagePath>www\assets\icon\white\icon-truck.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-upload.png">
+      <PackagePath>www\assets\icon\white\icon-upload.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-usb.png">
+      <PackagePath>www\assets\icon\white\icon-usb.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-video-camera.png">
+      <PackagePath>www\assets\icon\white\icon-video-camera.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-warning.png">
+      <PackagePath>www\assets\icon\white\icon-warning.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-watch.png">
+      <PackagePath>www\assets\icon\white\icon-watch.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-web.png">
+      <PackagePath>www\assets\icon\white\icon-web.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-website.png">
+      <PackagePath>www\assets\icon\white\icon-website.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-website2.png">
+      <PackagePath>www\assets\icon\white\icon-website2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-websites.png">
+      <PackagePath>www\assets\icon\white\icon-websites.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-wifi.png">
+      <PackagePath>www\assets\icon\white\icon-wifi.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-wine-glass.png">
+      <PackagePath>www\assets\icon\white\icon-wine-glass.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-world-dollar.png">
+      <PackagePath>www\assets\icon\white\icon-world-dollar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-world.png">
+      <PackagePath>www\assets\icon\white\icon-world.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-yingyang.png">
+      <PackagePath>www\assets\icon\white\icon-yingyang.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-zoom-minus.png">
+      <PackagePath>www\assets\icon\white\icon-zoom-minus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-zoom-plus.png">
+      <PackagePath>www\assets\icon\white\icon-zoom-plus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\white\icon-zoom.png">
+      <PackagePath>www\assets\icon\white\icon-zoom.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\yellow\icon-alarm-clock.png">
+      <PackagePath>www\assets\icon\yellow\icon-alarm-clock.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\yellow\icon-bell.png">
+      <PackagePath>www\assets\icon\yellow\icon-bell.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\yellow\icon-circle-plus.png">
+      <PackagePath>www\assets\icon\yellow\icon-circle-plus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\yellow\icon-clock.png">
+      <PackagePath>www\assets\icon\yellow\icon-clock.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\yellow\icon-cloud.png">
+      <PackagePath>www\assets\icon\yellow\icon-cloud.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\yellow\icon-directions.png">
+      <PackagePath>www\assets\icon\yellow\icon-directions.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\yellow\icon-documents-dollar.png">
+      <PackagePath>www\assets\icon\yellow\icon-documents-dollar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\yellow\icon-folder.png">
+      <PackagePath>www\assets\icon\yellow\icon-folder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\yellow\icon-toolbox.png">
+      <PackagePath>www\assets\icon\yellow\icon-toolbox.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\yellow\icon-world.png">
+      <PackagePath>www\assets\icon\yellow\icon-world.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\img\alert.png">
+      <PackagePath>www\assets\img\alert.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\img\arrow-right.png">
+      <PackagePath>www\assets\img\arrow-right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\img\bell.png">
+      <PackagePath>www\assets\img\bell.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\img\bell_y.png">
+      <PackagePath>www\assets\img\bell_y.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\img\cloud.png">
+      <PackagePath>www\assets\img\cloud.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\img\download.png">
+      <PackagePath>www\assets\img\download.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\img\file.png">
+      <PackagePath>www\assets\img\file.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\img\folder.png">
+      <PackagePath>www\assets\img\folder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\img\folder_b.png">
+      <PackagePath>www\assets\img\folder_b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\img\power.png">
+      <PackagePath>www\assets\img\power.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\img\refresh.png">
+      <PackagePath>www\assets\img\refresh.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\ionicons.eot">
+      <PackagePath>www\assets\fonts\ionicons.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\ionicons.scss">
+      <PackagePath>www\assets\fonts\ionicons.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\noto-sans.scss">
+      <PackagePath>www\assets\fonts\noto-sans.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\roboto.scss">
+      <PackagePath>www\assets\fonts\roboto.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\ionicons.svg">
+      <PackagePath>www\assets\fonts\ionicons.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\ionicons.ttf">
+      <PackagePath>www\assets\fonts\ionicons.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\noto-sans-bold.ttf">
+      <PackagePath>www\assets\fonts\noto-sans-bold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\noto-sans-regular.ttf">
+      <PackagePath>www\assets\fonts\noto-sans-regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\roboto-bold.ttf">
+      <PackagePath>www\assets\fonts\roboto-bold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\roboto-light.ttf">
+      <PackagePath>www\assets\fonts\roboto-light.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\roboto-medium.ttf">
+      <PackagePath>www\assets\fonts\roboto-medium.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\roboto-regular.ttf">
+      <PackagePath>www\assets\fonts\roboto-regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\ionicons.woff">
+      <PackagePath>www\assets\fonts\ionicons.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\noto-sans-bold.woff">
+      <PackagePath>www\assets\fonts\noto-sans-bold.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\noto-sans-regular.woff">
+      <PackagePath>www\assets\fonts\noto-sans-regular.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\roboto-bold.woff">
+      <PackagePath>www\assets\fonts\roboto-bold.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\roboto-light.woff">
+      <PackagePath>www\assets\fonts\roboto-light.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\roboto-medium.woff">
+      <PackagePath>www\assets\fonts\roboto-medium.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\roboto-regular.woff">
+      <PackagePath>www\assets\fonts\roboto-regular.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\ionicons.woff2">
+      <PackagePath>www\assets\fonts\ionicons.woff2</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\roboto-bold.woff2">
+      <PackagePath>www\assets\fonts\roboto-bold.woff2</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\roboto-light.woff2">
+      <PackagePath>www\assets\fonts\roboto-light.woff2</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\roboto-medium.woff2">
+      <PackagePath>www\assets\fonts\roboto-medium.woff2</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\fonts\roboto-regular.woff2">
+      <PackagePath>www\assets\fonts\roboto-regular.woff2</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\icon\favicon.ico">
+      <PackagePath>www\assets\icon\favicon.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\account-describe.json">
+      <PackagePath>www\assets\poc_data\account-describe.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\account-retrieve.json">
+      <PackagePath>www\assets\poc_data\account-retrieve.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\account-summarylayout.json">
+      <PackagePath>www\assets\poc_data\account-summarylayout.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\accounts-listlayout.json">
+      <PackagePath>www\assets\poc_data\accounts-listlayout.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\accounts-query.json">
+      <PackagePath>www\assets\poc_data\accounts-query.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\catalog_359_HD_CAD_example.json">
+      <PackagePath>www\assets\poc_data\catalog_359_HD_CAD_example.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\catalog_359_HD_example.json">
+      <PackagePath>www\assets\poc_data\catalog_359_HD_example.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\catalog_579_HD_example.json">
+      <PackagePath>www\assets\poc_data\catalog_579_HD_example.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\catalog_torque_example.json">
+      <PackagePath>www\assets\poc_data\catalog_torque_example.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\opportunities-listlayout.json">
+      <PackagePath>www\assets\poc_data\opportunities-listlayout.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\opportunities-query.json">
+      <PackagePath>www\assets\poc_data\opportunities-query.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\opportunity-describe.json">
+      <PackagePath>www\assets\poc_data\opportunity-describe.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\opportunity-retrieve.json">
+      <PackagePath>www\assets\poc_data\opportunity-retrieve.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\opportunity-summarylayout.json">
+      <PackagePath>www\assets\poc_data\opportunity-summarylayout.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quote-describe.json">
+      <PackagePath>www\assets\poc_data\quote-describe.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quote-retrieve.json">
+      <PackagePath>www\assets\poc_data\quote-retrieve.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quote-summarylayout.json">
+      <PackagePath>www\assets\poc_data\quote-summarylayout.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quoteline-describe.json">
+      <PackagePath>www\assets\poc_data\quoteline-describe.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quotelines-listlayout.json">
+      <PackagePath>www\assets\poc_data\quotelines-listlayout.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quotelines-query.json">
+      <PackagePath>www\assets\poc_data\quotelines-query.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quotes-listlayout.json">
+      <PackagePath>www\assets\poc_data\quotes-listlayout.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quotes-query.json">
+      <PackagePath>www\assets\poc_data\quotes-query.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\manifest.json">
+      <PackagePath>www\manifest.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\account-describe.json.url.txt">
+      <PackagePath>www\assets\poc_data\account-describe.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\account-retrieve.json.url.txt">
+      <PackagePath>www\assets\poc_data\account-retrieve.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\account-summarylayout.json.url.txt">
+      <PackagePath>www\assets\poc_data\account-summarylayout.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\accounts-listlayout.json.url.txt">
+      <PackagePath>www\assets\poc_data\accounts-listlayout.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\accounts-query.json.url.txt">
+      <PackagePath>www\assets\poc_data\accounts-query.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\opportunities-listlayout.json.url.txt">
+      <PackagePath>www\assets\poc_data\opportunities-listlayout.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\opportunities-query.json.url.txt">
+      <PackagePath>www\assets\poc_data\opportunities-query.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\opportunity-describe.json.url.txt">
+      <PackagePath>www\assets\poc_data\opportunity-describe.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\opportunity-retrieve.json.url.txt">
+      <PackagePath>www\assets\poc_data\opportunity-retrieve.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\opportunity-summarylayout.json.url.txt">
+      <PackagePath>www\assets\poc_data\opportunity-summarylayout.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quote-describe.json.url.txt">
+      <PackagePath>www\assets\poc_data\quote-describe.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quote-retrieve.json.url.txt">
+      <PackagePath>www\assets\poc_data\quote-retrieve.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quote-summarylayout.json.url.txt">
+      <PackagePath>www\assets\poc_data\quote-summarylayout.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quoteline-describe.json.url.txt">
+      <PackagePath>www\assets\poc_data\quoteline-describe.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quotelines-listlayout.json.url.txt">
+      <PackagePath>www\assets\poc_data\quotelines-listlayout.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quotelines-query.json.url.txt">
+      <PackagePath>www\assets\poc_data\quotelines-query.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quotes-listlayout.json.url.txt">
+      <PackagePath>www\assets\poc_data\quotes-listlayout.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\assets\poc_data\quotes-query.json.url.txt">
+      <PackagePath>www\assets\poc_data\quotes-query.json.url.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\build\main.css">
+      <PackagePath>www\build\main.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\css\splashscreen.css">
+      <PackagePath>www\css\splashscreen.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\build\main.css.map">
+      <PackagePath>www\build\main.css.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\build\main.js.map">
+      <PackagePath>www\build\main.js.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\build\main.js">
+      <PackagePath>www\build\main.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\build\polyfills.js">
+      <PackagePath>www\build\polyfills.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\build\sw-toolbox.js">
+      <PackagePath>www\build\sw-toolbox.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\cordova-js-src\confighelper.js">
+      <PackagePath>www\cordova-js-src\confighelper.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\cordova-js-src\exec.js">
+      <PackagePath>www\cordova-js-src\exec.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\cordova-js-src\platform.js">
+      <PackagePath>www\cordova-js-src\platform.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\cordova-js-src\splashscreen.js">
+      <PackagePath>www\cordova-js-src\splashscreen.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\plugins\cordova-plugin-console\www\console-via-logger.js">
+      <PackagePath>www\plugins\cordova-plugin-console\www\console-via-logger.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\plugins\cordova-plugin-console\www\logger.js">
+      <PackagePath>www\plugins\cordova-plugin-console\www\logger.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\plugins\cordova-plugin-device\www\device.js">
+      <PackagePath>www\plugins\cordova-plugin-device\www\device.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\plugins\cordova-plugin-splashscreen\www\splashscreen.js">
+      <PackagePath>www\plugins\cordova-plugin-splashscreen\www\splashscreen.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\plugins\cordova-plugin-statusbar\src\windows\StatusBarProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-statusbar\src\windows\StatusBarProxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\plugins\cordova-plugin-statusbar\www\statusbar.js">
+      <PackagePath>www\plugins\cordova-plugin-statusbar\www\statusbar.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\plugins\cordova-sqlite-storage\src\windows\sqlite-proxy.js">
+      <PackagePath>www\plugins\cordova-sqlite-storage\src\windows\sqlite-proxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\plugins\cordova-sqlite-storage\src\windows\SQLite3-Win-RT\SQLite3JS\js\SQLite3.js">
+      <PackagePath>www\plugins\cordova-sqlite-storage\src\windows\SQLite3-Win-RT\SQLite3JS\js\SQLite3.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\plugins\cordova-sqlite-storage\www\SQLitePlugin.js">
+      <PackagePath>www\plugins\cordova-sqlite-storage\www\SQLitePlugin.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\plugins\ionic-plugin-keyboard\src\windows\KeyboardProxy.js">
+      <PackagePath>www\plugins\ionic-plugin-keyboard\src\windows\KeyboardProxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\service-worker.js">
+      <PackagePath>www\service-worker.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\WinJS\js\base.js">
+      <PackagePath>www\WinJS\js\base.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\msqsh\Desktop\new\fpx\platforms\windows\build\phone\Debug\AnyCPU\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\">
+      <Name>Microsoft.Phone.WinJS.2.1</Name>
+      <Version>1.0.9651.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Phone.WinJS.2.1, MinVersion=1.0.9651.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\Microsoft.Phone.WinJS.2.1.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

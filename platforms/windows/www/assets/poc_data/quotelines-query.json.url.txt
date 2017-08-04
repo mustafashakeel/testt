@@ -1,0 +1,1 @@
+https://hybcpq.fpx.com/rs/18/cpqui?batchsize=20&pagenumber=1&query=Select+Quantity,Name,OrderCode,BaseListPrice,CurrencyIsoCode,Product_Id,IsSelected+From+QuoteLine+WHERE+ParentQuoteId+%3D+%2703a000012a6ijj3j%27+ORDER+BY+Sequence&resolve-names=true

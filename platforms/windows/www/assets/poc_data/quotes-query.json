@@ -1,0 +1,150 @@
+﻿{
+	"size": 9,
+	"records": [
+		{
+			"OpportunityId": {
+				"Id": "08a000012a6ijj2y",
+				"Name": "Opportunity for Salient Solutions"
+			},
+			"IsPrimary": true,
+			"fpRules": {
+				"updateAvailable": false,
+				"isDependentDataOutOfSync": false
+			},
+			"Id": "03a000012a6ijj3j",
+			"TotalAmount": 319887,
+			"FormattedId": "194403",
+			"CurrencyIsoCode": "USD",
+			"Name": "Quote for Salient Solutions"
+		},
+		{
+			"OpportunityId": {
+				"Id": "08a000012a6ijj2y",
+				"Name": "Opportunity for Salient Solutions"
+			},
+			"IsPrimary": false,
+			"fpRules": {
+				"updateAvailable": false,
+				"isDependentDataOutOfSync": false
+			},
+			"Id": "03a000012a6ijjcs",
+			"TotalAmount": 252500,
+			"FormattedId": "194403-1",
+			"CurrencyIsoCode": "USD",
+			"Name": "Quote for Salient Solutions (2)"
+		},
+		{
+			"OpportunityId": {
+				"Id": "08a000012a6ijj3g",
+				"Name": "Opportunity for Gibson"
+			},
+			"IsPrimary": true,
+			"fpRules": {
+				"updateAvailable": false,
+				"isDependentDataOutOfSync": false
+			},
+			"Id": "03a000012a6ijjrx",
+			"TotalAmount": 0,
+			"FormattedId": "194405",
+			"CurrencyIsoCode": "USD",
+			"Name": "Quote for Gibson"
+		},
+		{
+			"OpportunityId": {
+				"Id": "08a000012a6ijj37",
+				"Name": "Opportunity for Torphy"
+			},
+			"IsPrimary": true,
+			"fpRules": {
+				"updateAvailable": false,
+				"isDependentDataOutOfSync": false
+			},
+			"Id": "03a000012a6ijjs1",
+			"TotalAmount": 0,
+			"FormattedId": "194406",
+			"CurrencyIsoCode": "USD",
+			"Name": "Quote for Torphy"
+		},
+		{
+			"OpportunityId": {
+				"Id": "08a000012a6ijj3a",
+				"Name": "Opportunity for Renner"
+			},
+			"IsPrimary": true,
+			"fpRules": {
+				"updateAvailable": false,
+				"isDependentDataOutOfSync": false
+			},
+			"Id": "03a000012a6ijjs5",
+			"TotalAmount": 0,
+			"FormattedId": "194407",
+			"CurrencyIsoCode": "USD",
+			"Name": "Quote for Renner"
+		},
+		{
+			"OpportunityId": {
+				"Id": "08a000012a6ijj3d",
+				"Name": "Opportunity for Fortuna"
+			},
+			"IsPrimary": true,
+			"fpRules": {
+				"updateAvailable": false,
+				"isDependentDataOutOfSync": false
+			},
+			"Id": "03a000012a6ijjs9",
+			"TotalAmount": 0,
+			"FormattedId": "194408",
+			"CurrencyIsoCode": "EUR",
+			"Name": "Quote for Fortuna"
+		},
+		{
+			"OpportunityId": {
+				"Id": "08a000012a6ijj31",
+				"Name": "Opportunity for Tatum"
+			},
+			"IsPrimary": true,
+			"fpRules": {
+				"updateAvailable": false,
+				"isDependentDataOutOfSync": false
+			},
+			"Id": "03a000012a6ijjsd",
+			"TotalAmount": 0,
+			"FormattedId": "194409",
+			"CurrencyIsoCode": "USD",
+			"Name": "Quote for Tatum"
+		},
+		{
+			"OpportunityId": {
+				"Id": "08a000012a6ijj34",
+				"Name": "Opportunity for Stanton"
+			},
+			"IsPrimary": true,
+			"fpRules": {
+				"updateAvailable": false,
+				"isDependentDataOutOfSync": false
+			},
+			"Id": "03a000012a6ijjsh",
+			"TotalAmount": 0,
+			"FormattedId": "194410",
+			"CurrencyIsoCode": "USD",
+			"Name": "Quote for Stanton"
+		},
+		{
+			"OpportunityId": {
+				"Id": "08a000036ujjmki9",
+				"Name": "Opportunity for Fleet Industries"
+			},
+			"IsPrimary": true,
+			"fpRules": {
+				"updateAvailable": false,
+				"isDependentDataOutOfSync": false
+			},
+			"Id": "03a000036ujjmkic",
+			"TotalAmount": 81373,
+			"FormattedId": "194404",
+			"CurrencyIsoCode": "USD",
+			"Name": "Eastern Division Truck Expansion"
+		}
+	],
+	"done": true
+}

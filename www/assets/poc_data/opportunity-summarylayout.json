@@ -1,0 +1,572 @@
+{
+	"pageLayout": {
+		"updateable": true,
+		"isDefault": true,
+		"name": "opportunity_layout",
+		"label": "opportunity_layout",
+		"pageLayoutSections": [
+			{
+				"sequence": 1,
+				"name": "opportunity_information",
+				"label": "Opportunity Information",
+				"rows": [
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": true,
+								"apiName": "AccountId",
+								"referencedObject": "Account",
+								"precision": 0,
+								"custom": false,
+								"length": 0,
+								"scale": 0,
+								"description": "This is the ID of the account for this opportunity.",
+								"nameField": false,
+								"label": "Account Name",
+								"type": "reference",
+								"nillable": true,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "AccountId",
+								"columnIndex": 0,
+								"digits": 0,
+								"nameQuery": "Account_Name",
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Name",
+								"precision": 0,
+								"custom": false,
+								"length": 120,
+								"scale": 0,
+								"description": "This is the name of the opportunity.",
+								"nameField": true,
+								"label": "Opportunity Name",
+								"type": "string",
+								"nillable": false,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "Name",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Description",
+								"precision": 0,
+								"custom": false,
+								"length": 250,
+								"scale": 0,
+								"description": "This is the description for this opportunity.",
+								"nameField": false,
+								"label": "Description",
+								"type": "string",
+								"nillable": true,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "Description",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"picklistValues": [
+									{
+										"defaultValue": true,
+										"controllingValues": [],
+										"label": "New Sales",
+										"isActive": true,
+										"value": "New Sales"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Renewal Sale",
+										"isActive": true,
+										"value": "Renewal Sale"
+									}
+								],
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Opportunity_Type__c",
+								"precision": 0,
+								"custom": true,
+								"length": 100,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Opportunity Type",
+								"type": "picklist",
+								"nillable": false,
+								"restrictedPicklist": true,
+								"createable": true,
+								"name": "Opportunity_Type__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Revenue__c",
+								"precision": 18,
+								"custom": true,
+								"length": 0,
+								"scale": 2,
+								"description": "",
+								"nameField": false,
+								"label": "Revenue",
+								"type": "currency",
+								"nillable": true,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "Revenue__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"picklistValues": [
+									{
+										"defaultValue": false,
+										"label": "EURO",
+										"value": "EUR"
+									},
+									{
+										"defaultValue": true,
+										"label": "U.S. Dollar",
+										"value": "USD"
+									}
+								],
+								"updateable": false,
+								"filterable": true,
+								"apiName": "CurrencyIsoCode",
+								"precision": 0,
+								"custom": false,
+								"length": 3,
+								"scale": 0,
+								"description": "This is the currency for all prices within this opportunity. These codes are represented by the three letter ISO 4217 currency codes.",
+								"nameField": false,
+								"label": "Currency",
+								"type": "picklist",
+								"nillable": false,
+								"restrictedPicklist": true,
+								"createable": true,
+								"name": "CurrencyIsoCode",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"picklistValues": [
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Booked",
+										"isActive": true,
+										"value": "Booked"
+									},
+									{
+										"defaultValue": true,
+										"controllingValues": [],
+										"label": "Created",
+										"isActive": true,
+										"value": "Created"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Proposed",
+										"isActive": true,
+										"value": "Proposed"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Forecast",
+										"isActive": true,
+										"value": "Forecast"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Won",
+										"isActive": true,
+										"value": "Won"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Cancelled",
+										"isActive": true,
+										"value": "Cancelled"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Lost",
+										"isActive": true,
+										"value": "Lost"
+									}
+								],
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Status__c",
+								"precision": 0,
+								"custom": true,
+								"length": 100,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Status",
+								"type": "picklist",
+								"nillable": false,
+								"restrictedPicklist": true,
+								"createable": true,
+								"name": "Status__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"picklistValues": [
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Brazil",
+										"isActive": true,
+										"value": "Brazil"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Canada",
+										"isActive": true,
+										"value": "Canada"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Mexico",
+										"isActive": true,
+										"value": "Mexico"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "United States",
+										"isActive": true,
+										"value": "United States"
+									}
+								],
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Country__c",
+								"precision": 0,
+								"custom": true,
+								"length": 100,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Bill to Country",
+								"type": "picklist",
+								"nillable": true,
+								"restrictedPicklist": true,
+								"createable": true,
+								"name": "Country__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"picklistValues": [
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Africa",
+										"isActive": true,
+										"value": "Africa"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Brazil",
+										"isActive": true,
+										"value": "Brazil"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Canada",
+										"isActive": true,
+										"value": "Canada"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Japan",
+										"isActive": true,
+										"value": "Japan"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Mexico",
+										"isActive": true,
+										"value": "Mexico"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Norway",
+										"isActive": true,
+										"value": "Norway"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Spain",
+										"isActive": true,
+										"value": "Spain"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Sweden",
+										"isActive": true,
+										"value": "Sweden"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "Turkey",
+										"isActive": true,
+										"value": "Turkey"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "United Kingdom",
+										"isActive": true,
+										"value": "United Kingdom"
+									},
+									{
+										"defaultValue": false,
+										"controllingValues": [],
+										"label": "United States",
+										"isActive": true,
+										"value": "United States"
+									}
+								],
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Install_Country__c",
+								"precision": 0,
+								"custom": true,
+								"length": 100,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Install Country",
+								"type": "picklist",
+								"nillable": true,
+								"restrictedPicklist": true,
+								"createable": true,
+								"name": "Install_Country__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Probability_Percent__c",
+								"precision": 5,
+								"custom": true,
+								"length": 0,
+								"scale": 2,
+								"description": "",
+								"nameField": false,
+								"label": "Probability %",
+								"type": "percent",
+								"nillable": true,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "Probability_Percent__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Bill_Date__c",
+								"precision": 0,
+								"custom": true,
+								"length": 0,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Bill Date",
+								"type": "date",
+								"nillable": true,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "Bill_Date__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Book_Date__c",
+								"precision": 0,
+								"custom": true,
+								"length": 0,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Book Date",
+								"type": "date",
+								"nillable": true,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "Book_Date__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"updateable": true,
+								"filterable": true,
+								"apiName": "Sales_Group__c",
+								"precision": 0,
+								"custom": true,
+								"length": 50,
+								"scale": 0,
+								"description": "",
+								"nameField": false,
+								"label": "Sales Group",
+								"type": "string",
+								"nillable": true,
+								"restrictedPicklist": false,
+								"createable": true,
+								"name": "Sales_Group__c",
+								"columnIndex": 0,
+								"digits": 0,
+								"isSpan": false
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"firstName": "Owner.FirstName",
+								"lastName": "Owner.LastName",
+								"apiName": "OwnerId",
+								"helpText": "This is the user who currently owns this opportunity. You can change the owner by clicking the Change link. If you change the owner here, the ownership of all its quotes, products, and proposals will be transferred to the new owner as well.",
+								"isReadOnly": false,
+								"name": "OwnerId",
+								"columnIndex": 0,
+								"label": "Opportunity Owner",
+								"isSpan": false,
+								"type": "owner"
+							}
+						]
+					}
+				]
+			},
+			{
+				"sequence": 3,
+				"name": "opportunity_system",
+				"label": "System Information",
+				"rows": [
+					{
+						"columns": [
+							{
+								"date": "CreatedDate",
+								"userLastName": "CreatedBy.LastName",
+								"name": "Created",
+								"columnIndex": 1,
+								"label": "Created By",
+								"userFirstName": "CreatedBy.FirstName",
+								"isSpan": false,
+								"type": "userDateTime",
+								"user": "CreatedById"
+							}
+						]
+					},
+					{
+						"columns": [
+							{
+								"date": "LastModifiedDate",
+								"userLastName": "LastModifiedBy.LastName",
+								"name": "LastModified",
+								"columnIndex": 1,
+								"label": "Last Modified By",
+								"userFirstName": "LastModifiedBy.FirstName",
+								"isSpan": false,
+								"type": "userDateTime",
+								"user": "LastModifiedById"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

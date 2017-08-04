@@ -1,0 +1,1419 @@
+﻿{
+	"objects": [
+		{
+			"updateable": true,
+			"queryable": true,
+			"childRelationships": [
+				{
+					"relationshipName": "Quotes",
+					"field": "OpportunityId",
+					"childFpObject": "Quote"
+				},
+				{
+					"relationshipName": "ExportedObjectRelationships",
+					"field": "OpportunityId",
+					"childFpObject": "ExportedObjectRelationship"
+				},
+				{
+					"relationshipName": "QuoteConfiguredProducts",
+					"field": "OpportunityId",
+					"childFpObject": "QuoteConfiguredProduct"
+				},
+				{
+					"relationshipName": "Proposals",
+					"field": "OpportunityId",
+					"childFpObject": "Proposal"
+				}
+			],
+			"createable": true,
+			"retrieveable": true,
+			"name": "Opportunity",
+			"deletable": true,
+			"deleteAll": false,
+			"updateAll": false,
+			"fields": [
+				{
+					"filterable": true,
+					"updateable": true,
+					"custom": false,
+					"precision": 0,
+					"length": 0,
+					"description": "This is the ID of the account for this opportunity.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Account Name",
+					"type": "reference",
+					"referenceTo": "Account",
+					"nillable": true,
+					"relationshipName": "Account",
+					"restrictedPicklist": false,
+					"createable": true,
+					"name": "AccountId",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": true,
+					"custom": true,
+					"precision": 0,
+					"length": 0,
+					"description": "",
+					"scale": 0,
+					"nameField": false,
+					"label": "Bill Date",
+					"type": "date",
+					"nillable": true,
+					"restrictedPicklist": false,
+					"createable": true,
+					"name": "Bill_Date__c",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": true,
+					"custom": true,
+					"precision": 0,
+					"length": 0,
+					"description": "",
+					"scale": 0,
+					"nameField": false,
+					"label": "Book Date",
+					"type": "date",
+					"nillable": true,
+					"restrictedPicklist": false,
+					"createable": true,
+					"name": "Book_Date__c",
+					"digits": 0
+				},
+				{
+					"filterable": false,
+					"updateable": false,
+					"custom": false,
+					"precision": 0,
+					"length": 0,
+					"description": "This is the ID of the object from which this object was copied.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Cloned From Id",
+					"type": "reference",
+					"referenceTo": "Opportunity",
+					"nillable": true,
+					"restrictedPicklist": false,
+					"createable": false,
+					"name": "ClonedFromId",
+					"digits": 0
+				},
+				{
+					"picklistValues": [
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Brazil",
+							"isActive": true,
+							"value": "Brazil"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Canada",
+							"isActive": true,
+							"value": "Canada"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Mexico",
+							"isActive": true,
+							"value": "Mexico"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "United States",
+							"isActive": true,
+							"value": "United States"
+						}
+					],
+					"filterable": true,
+					"updateable": true,
+					"custom": true,
+					"precision": 0,
+					"length": 100,
+					"description": "",
+					"scale": 0,
+					"nameField": false,
+					"label": "Bill to Country",
+					"type": "picklist",
+					"nillable": true,
+					"restrictedPicklist": true,
+					"createable": true,
+					"name": "Country__c",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": false,
+					"custom": false,
+					"precision": 0,
+					"length": 0,
+					"description": "This is the ID of the user who created this object.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Created By Id",
+					"type": "reference",
+					"referenceTo": "User",
+					"nillable": false,
+					"relationshipName": "CreatedBy",
+					"restrictedPicklist": false,
+					"createable": false,
+					"name": "CreatedById",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": false,
+					"custom": false,
+					"precision": 0,
+					"length": 0,
+					"description": "This is the time when this object was created.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Opportunity Created",
+					"type": "datetime",
+					"nillable": false,
+					"restrictedPicklist": false,
+					"createable": false,
+					"name": "CreatedDate",
+					"digits": 0
+				},
+				{
+					"picklistValues": [
+						{
+							"defaultValue": true,
+							"label": "Not exported",
+							"value": "NotExported"
+						},
+						{
+							"defaultValue": false,
+							"label": "Completed",
+							"value": "Completed"
+						},
+						{
+							"defaultValue": false,
+							"label": "In progress",
+							"value": "InProgress"
+						},
+						{
+							"defaultValue": false,
+							"label": "Failed",
+							"value": "Failed"
+						},
+						{
+							"defaultValue": false,
+							"label": "Unknown",
+							"value": "Unknown"
+						}
+					],
+					"filterable": true,
+					"updateable": true,
+					"custom": false,
+					"precision": 0,
+					"length": 12,
+					"description": "This field displays the status of the last export.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Export Status",
+					"type": "picklist",
+					"nillable": true,
+					"restrictedPicklist": true,
+					"createable": true,
+					"name": "CrmExportStatus",
+					"digits": 0
+				},
+				{
+					"picklistValues": [
+						{
+							"defaultValue": false,
+							"label": "EURO",
+							"value": "EUR"
+						},
+						{
+							"defaultValue": true,
+							"label": "U.S. Dollar",
+							"value": "USD"
+						}
+					],
+					"filterable": true,
+					"updateable": false,
+					"custom": false,
+					"precision": 0,
+					"length": 3,
+					"description": "This is the currency for all prices within this opportunity. These codes are represented by the three letter ISO 4217 currency codes.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Currency",
+					"type": "picklist",
+					"nillable": false,
+					"restrictedPicklist": true,
+					"createable": true,
+					"name": "CurrencyIsoCode",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": true,
+					"custom": false,
+					"precision": 0,
+					"length": 250,
+					"description": "This is the description for this opportunity.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Description",
+					"type": "string",
+					"nillable": true,
+					"restrictedPicklist": false,
+					"createable": true,
+					"name": "Description",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": true,
+					"custom": false,
+					"precision": 0,
+					"length": 100,
+					"description": "This field is the ID of the corresponding CRM Opportunity with which this opportunity is associated with",
+					"scale": 0,
+					"nameField": false,
+					"label": "CRM Object",
+					"type": "string",
+					"nillable": true,
+					"restrictedPicklist": false,
+					"createable": true,
+					"name": "ExternalId",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": false,
+					"custom": false,
+					"precision": 0,
+					"length": 16,
+					"description": "This field uniquely identifies this object from all other objects in the system.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Id",
+					"type": "id",
+					"nillable": false,
+					"restrictedPicklist": false,
+					"createable": false,
+					"name": "Id",
+					"digits": 0
+				},
+				{
+					"picklistValues": [
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Africa",
+							"isActive": true,
+							"value": "Africa"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Brazil",
+							"isActive": true,
+							"value": "Brazil"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Canada",
+							"isActive": true,
+							"value": "Canada"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Japan",
+							"isActive": true,
+							"value": "Japan"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Mexico",
+							"isActive": true,
+							"value": "Mexico"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Norway",
+							"isActive": true,
+							"value": "Norway"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Spain",
+							"isActive": true,
+							"value": "Spain"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Sweden",
+							"isActive": true,
+							"value": "Sweden"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Turkey",
+							"isActive": true,
+							"value": "Turkey"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "United Kingdom",
+							"isActive": true,
+							"value": "United Kingdom"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "United States",
+							"isActive": true,
+							"value": "United States"
+						}
+					],
+					"filterable": true,
+					"updateable": true,
+					"custom": true,
+					"precision": 0,
+					"length": 100,
+					"description": "",
+					"scale": 0,
+					"nameField": false,
+					"label": "Install Country",
+					"type": "picklist",
+					"nillable": true,
+					"restrictedPicklist": true,
+					"createable": true,
+					"name": "Install_Country__c",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": true,
+					"custom": false,
+					"precision": 0,
+					"length": 0,
+					"description": "This field indicates if the opportunity has a status that is closed.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Closed",
+					"type": "boolean",
+					"nillable": true,
+					"restrictedPicklist": false,
+					"createable": true,
+					"name": "IsClosed",
+					"digits": 0
+				},
+				{
+					"picklistValues": [
+						{
+							"defaultValue": true,
+							"label": "English (United States)",
+							"value": "en_US"
+						},
+						{
+							"defaultValue": false,
+							"label": "French",
+							"value": "fr"
+						}
+					],
+					"filterable": true,
+					"updateable": false,
+					"custom": false,
+					"precision": 0,
+					"length": 20,
+					"description": "This is the language code and country code (separated by an underscore) for this opportunity. This value can be null which means it will use the users language.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Language",
+					"type": "picklist",
+					"nillable": true,
+					"restrictedPicklist": true,
+					"createable": true,
+					"name": "LanguageLocaleKey",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": false,
+					"custom": false,
+					"precision": 0,
+					"length": 0,
+					"description": "This is the ID of the user who last modified this object.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Last Modified By Id",
+					"type": "reference",
+					"referenceTo": "User",
+					"nillable": false,
+					"relationshipName": "LastModifiedBy",
+					"restrictedPicklist": false,
+					"createable": false,
+					"name": "LastModifiedById",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": false,
+					"custom": false,
+					"precision": 0,
+					"length": 0,
+					"description": "This is the time when this object was last modified.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Opportunity Last Modified",
+					"type": "datetime",
+					"nillable": false,
+					"restrictedPicklist": false,
+					"createable": false,
+					"name": "LastModifiedDate",
+					"digits": 0
+				},
+				{
+					"picklistValues": [
+						{
+							"defaultValue": false,
+							"label": "Albanian",
+							"value": "sq"
+						},
+						{
+							"defaultValue": false,
+							"label": "Arabic",
+							"value": "ar"
+						},
+						{
+							"defaultValue": false,
+							"label": "Arabic (Bahrain)",
+							"value": "ar_BH"
+						},
+						{
+							"defaultValue": false,
+							"label": "Arabic (Jordan)",
+							"value": "ar_JO"
+						},
+						{
+							"defaultValue": false,
+							"label": "Arabic (Kuwait)",
+							"value": "ar_KW"
+						},
+						{
+							"defaultValue": false,
+							"label": "Arabic (Lebanon)",
+							"value": "ar_LB"
+						},
+						{
+							"defaultValue": false,
+							"label": "Arabic (Saudi Arabia)",
+							"value": "ar_SA"
+						},
+						{
+							"defaultValue": false,
+							"label": "Arabic (United Arab Emirates)",
+							"value": "ar_AE"
+						},
+						{
+							"defaultValue": false,
+							"label": "Armenian (Armenia)",
+							"value": "hy"
+						},
+						{
+							"defaultValue": false,
+							"label": "Basque",
+							"value": "eu"
+						},
+						{
+							"defaultValue": false,
+							"label": "Bosnian",
+							"value": "bs"
+						},
+						{
+							"defaultValue": false,
+							"label": "Bulgarian (Bulgaria)",
+							"value": "bg"
+						},
+						{
+							"defaultValue": false,
+							"label": "Catalan",
+							"value": "ca"
+						},
+						{
+							"defaultValue": false,
+							"label": "Catalan (Spain)",
+							"value": "ca_ES"
+						},
+						{
+							"defaultValue": false,
+							"label": "Catalan (Spain,Euro)",
+							"value": "ca_ES_EURO"
+						},
+						{
+							"defaultValue": false,
+							"label": "Chinese",
+							"value": "zh"
+						},
+						{
+							"defaultValue": false,
+							"label": "Chinese (Hong Kong)",
+							"value": "zh_HK"
+						},
+						{
+							"defaultValue": false,
+							"label": "Chinese (Simplified) (China)",
+							"value": "zh_CN"
+						},
+						{
+							"defaultValue": false,
+							"label": "Chinese (Traditional) (Taiwan)",
+							"value": "zh_TW"
+						},
+						{
+							"defaultValue": false,
+							"label": "Croatian (Croatia)",
+							"value": "hr_HR"
+						},
+						{
+							"defaultValue": false,
+							"label": "Czech",
+							"value": "cs"
+						},
+						{
+							"defaultValue": false,
+							"label": "Czech (Czech Republic)",
+							"value": "cs_CZ"
+						},
+						{
+							"defaultValue": false,
+							"label": "Danish",
+							"value": "da"
+						},
+						{
+							"defaultValue": false,
+							"label": "Danish (Denmark)",
+							"value": "da_DK"
+						},
+						{
+							"defaultValue": false,
+							"label": "Dutch",
+							"value": "nl"
+						},
+						{
+							"defaultValue": false,
+							"label": "Dutch (Belgium)",
+							"value": "nl_BE"
+						},
+						{
+							"defaultValue": false,
+							"label": "Dutch (Netherlands)",
+							"value": "nl_NL"
+						},
+						{
+							"defaultValue": false,
+							"label": "Dutch (Suriname)",
+							"value": "nl_SR"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (Australia)",
+							"value": "en_AU"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (Barbados)",
+							"value": "en_BB"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (Bermuda)",
+							"value": "en_BM"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (Canada)",
+							"value": "en_CA"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (Ghana)",
+							"value": "en_GH"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (India)",
+							"value": "en_IN"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (Indonesia)",
+							"value": "en_ID"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (Ireland)",
+							"value": "en_IE"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (Ireland,Euro)",
+							"value": "en_IE_EURO"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (Malaysia)",
+							"value": "en_MY"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (New Zealand)",
+							"value": "en_NZ"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (Philippines)",
+							"value": "en_PH"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (Singapore)",
+							"value": "en_SG"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (South Africa)",
+							"value": "en_ZA"
+						},
+						{
+							"defaultValue": false,
+							"label": "English (United Kingdom)",
+							"value": "en_GB"
+						},
+						{
+							"defaultValue": true,
+							"label": "English (United States)",
+							"value": "en_US"
+						},
+						{
+							"defaultValue": false,
+							"label": "Estonian",
+							"value": "et"
+						},
+						{
+							"defaultValue": false,
+							"label": "Estonian (Estonia)",
+							"value": "et_EE"
+						},
+						{
+							"defaultValue": false,
+							"label": "Finnish",
+							"value": "fi"
+						},
+						{
+							"defaultValue": false,
+							"label": "Finnish (Finland)",
+							"value": "fi_FI"
+						},
+						{
+							"defaultValue": false,
+							"label": "Finnish (Finland,Euro)",
+							"value": "fi_FI_EURO"
+						},
+						{
+							"defaultValue": false,
+							"label": "French",
+							"value": "fr"
+						},
+						{
+							"defaultValue": false,
+							"label": "French (Belgium)",
+							"value": "fr_BE"
+						},
+						{
+							"defaultValue": false,
+							"label": "French (Canada)",
+							"value": "fr_CA"
+						},
+						{
+							"defaultValue": false,
+							"label": "French (France)",
+							"value": "fr_FR"
+						},
+						{
+							"defaultValue": false,
+							"label": "French (France,Euro)",
+							"value": "fr_FR_EURO"
+						},
+						{
+							"defaultValue": false,
+							"label": "French (Luxembourg)",
+							"value": "fr_LU"
+						},
+						{
+							"defaultValue": false,
+							"label": "French (Monaco)",
+							"value": "fr_MC"
+						},
+						{
+							"defaultValue": false,
+							"label": "French (Switzerland)",
+							"value": "fr_CH"
+						},
+						{
+							"defaultValue": false,
+							"label": "Georgian",
+							"value": "ka"
+						},
+						{
+							"defaultValue": false,
+							"label": "German",
+							"value": "de"
+						},
+						{
+							"defaultValue": false,
+							"label": "German (Austria)",
+							"value": "de_AT"
+						},
+						{
+							"defaultValue": false,
+							"label": "German (Austria,Euro)",
+							"value": "de_AT_EURO"
+						},
+						{
+							"defaultValue": false,
+							"label": "German (Germany)",
+							"value": "de_DE"
+						},
+						{
+							"defaultValue": false,
+							"label": "German (Germany,Euro)",
+							"value": "de_DE_EURO"
+						},
+						{
+							"defaultValue": false,
+							"label": "German (Luxembourg)",
+							"value": "de_LU"
+						},
+						{
+							"defaultValue": false,
+							"label": "German (Luxembourg,Euro)",
+							"value": "de_LU_EURO"
+						},
+						{
+							"defaultValue": false,
+							"label": "German (Switzerland)",
+							"value": "de_CH"
+						},
+						{
+							"defaultValue": false,
+							"label": "Greek (Greece)",
+							"value": "el_GR"
+						},
+						{
+							"defaultValue": false,
+							"label": "Hebrew",
+							"value": "iw"
+						},
+						{
+							"defaultValue": false,
+							"label": "Hebrew (Israel)",
+							"value": "iw_IL"
+						},
+						{
+							"defaultValue": false,
+							"label": "Hindi",
+							"value": "hi"
+						},
+						{
+							"defaultValue": false,
+							"label": "Hungarian",
+							"value": "hu"
+						},
+						{
+							"defaultValue": false,
+							"label": "Icelandic",
+							"value": "is"
+						},
+						{
+							"defaultValue": false,
+							"label": "Icelandic (Iceland)",
+							"value": "is_IS"
+						},
+						{
+							"defaultValue": false,
+							"label": "Indonesian",
+							"value": "in"
+						},
+						{
+							"defaultValue": false,
+							"label": "Irish",
+							"value": "ga"
+						},
+						{
+							"defaultValue": false,
+							"label": "Italian",
+							"value": "it"
+						},
+						{
+							"defaultValue": false,
+							"label": "Italian (Italy)",
+							"value": "it_IT"
+						},
+						{
+							"defaultValue": false,
+							"label": "Italian (Switzerland)",
+							"value": "it_CH"
+						},
+						{
+							"defaultValue": false,
+							"label": "Japanese",
+							"value": "ja"
+						},
+						{
+							"defaultValue": false,
+							"label": "Japanese (Japan)",
+							"value": "ja_JP"
+						},
+						{
+							"defaultValue": false,
+							"label": "Kazakh (Kazakhstan)",
+							"value": "kk_KZ"
+						},
+						{
+							"defaultValue": false,
+							"label": "Khmer (Cambodia)",
+							"value": "km_KH"
+						},
+						{
+							"defaultValue": false,
+							"label": "Korean",
+							"value": "ko"
+						},
+						{
+							"defaultValue": false,
+							"label": "Korean (South Korea)",
+							"value": "ko_KR"
+						},
+						{
+							"defaultValue": false,
+							"label": "Latvian",
+							"value": "lv"
+						},
+						{
+							"defaultValue": false,
+							"label": "Lithuanian",
+							"value": "lt"
+						},
+						{
+							"defaultValue": false,
+							"label": "Luxembourgish",
+							"value": "lb"
+						},
+						{
+							"defaultValue": false,
+							"label": "Macedonian",
+							"value": "mk"
+						},
+						{
+							"defaultValue": false,
+							"label": "Malay (Malaysia)",
+							"value": "ms_MY"
+						},
+						{
+							"defaultValue": false,
+							"label": "Maltese",
+							"value": "mt"
+						},
+						{
+							"defaultValue": false,
+							"label": "Moldovan",
+							"value": "ro_MD"
+						},
+						{
+							"defaultValue": false,
+							"label": "Montenegrin",
+							"value": "sh_ME"
+						},
+						{
+							"defaultValue": false,
+							"label": "Norwegian (Norway)",
+							"value": "no"
+						},
+						{
+							"defaultValue": false,
+							"label": "Norwegian (Norway,Bokm�l)",
+							"value": "no_NO"
+						},
+						{
+							"defaultValue": false,
+							"label": "Norwegian (Norway,Nynorsk)",
+							"value": "no_NO_NY"
+						},
+						{
+							"defaultValue": false,
+							"label": "Polish",
+							"value": "pl"
+						},
+						{
+							"defaultValue": false,
+							"label": "Portuguese",
+							"value": "pt"
+						},
+						{
+							"defaultValue": false,
+							"label": "Portuguese (Angola)",
+							"value": "pt_AO"
+						},
+						{
+							"defaultValue": false,
+							"label": "Portuguese (Brazil)",
+							"value": "pt_BR"
+						},
+						{
+							"defaultValue": false,
+							"label": "Portuguese (Portugal)",
+							"value": "pt_PT"
+						},
+						{
+							"defaultValue": false,
+							"label": "Romanian",
+							"value": "ro"
+						},
+						{
+							"defaultValue": false,
+							"label": "Romanian (Romania)",
+							"value": "ro_RO"
+						},
+						{
+							"defaultValue": false,
+							"label": "Romansh",
+							"value": "rm"
+						},
+						{
+							"defaultValue": false,
+							"label": "Russian",
+							"value": "ru"
+						},
+						{
+							"defaultValue": false,
+							"label": "Russian (Russia)",
+							"value": "ru_RU"
+						},
+						{
+							"defaultValue": false,
+							"label": "Serbian (Cyrillic)",
+							"value": "sr"
+						},
+						{
+							"defaultValue": false,
+							"label": "Serbian (Latin)",
+							"value": "sh"
+						},
+						{
+							"defaultValue": false,
+							"label": "Slovak (Slovakia)",
+							"value": "sk"
+						},
+						{
+							"defaultValue": false,
+							"label": "Slovenian (Slovenia)",
+							"value": "sl"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish",
+							"value": "es"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Argentina)",
+							"value": "es_AR"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Bolivia)",
+							"value": "es_BO"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Chile)",
+							"value": "es_CL"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Colombia)",
+							"value": "es_CO"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Costa Rica)",
+							"value": "es_CR"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Ecuador)",
+							"value": "es_EC"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (El Salvador)",
+							"value": "es_SV"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Guatemala)",
+							"value": "es_GT"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Honduras)",
+							"value": "es_HN"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Mexico)",
+							"value": "es_MX"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Paraguay)",
+							"value": "es_PY"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Peru)",
+							"value": "es_CE"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Puerto Rico)",
+							"value": "es_PR"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Spain)",
+							"value": "es_ES"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Spain,Euro)",
+							"value": "es_ES_EURO"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Uruguay)",
+							"value": "es_UY"
+						},
+						{
+							"defaultValue": false,
+							"label": "Spanish (Venezuela)",
+							"value": "es_VE"
+						},
+						{
+							"defaultValue": false,
+							"label": "Swedish",
+							"value": "sv"
+						},
+						{
+							"defaultValue": false,
+							"label": "Swedish (Sweden)",
+							"value": "sv_SE"
+						},
+						{
+							"defaultValue": false,
+							"label": "Tagalog",
+							"value": "tl"
+						},
+						{
+							"defaultValue": false,
+							"label": "Thai",
+							"value": "th"
+						},
+						{
+							"defaultValue": false,
+							"label": "Thai (Thailand)",
+							"value": "th_TH"
+						},
+						{
+							"defaultValue": false,
+							"label": "Turkish",
+							"value": "tr"
+						},
+						{
+							"defaultValue": false,
+							"label": "Ukrainian",
+							"value": "uk"
+						},
+						{
+							"defaultValue": false,
+							"label": "Ukrainian (Ukraine)",
+							"value": "uk_UA"
+						},
+						{
+							"defaultValue": false,
+							"label": "Urdu (Pakistan)",
+							"value": "ur_PK"
+						},
+						{
+							"defaultValue": false,
+							"label": "Vietnamese",
+							"value": "vi"
+						},
+						{
+							"defaultValue": false,
+							"label": "Vietnamese (Vietnam)",
+							"value": "vi_VN"
+						},
+						{
+							"defaultValue": false,
+							"label": "Welsh",
+							"value": "cy"
+						}
+					],
+					"filterable": true,
+					"updateable": false,
+					"custom": false,
+					"precision": 0,
+					"length": 20,
+					"description": "This is the locale code and country code (separated by an underscore) for this opportunity, used for formatting dates and numbers. This value can be null which means\n                it will use the users locale.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Locale",
+					"type": "picklist",
+					"nillable": true,
+					"restrictedPicklist": true,
+					"createable": true,
+					"name": "LocaleSidKey",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": true,
+					"custom": false,
+					"precision": 0,
+					"length": 120,
+					"description": "This is the name of the opportunity.",
+					"scale": 0,
+					"nameField": true,
+					"label": "Opportunity Name",
+					"type": "string",
+					"nillable": false,
+					"restrictedPicklist": false,
+					"createable": true,
+					"name": "Name",
+					"digits": 0
+				},
+				{
+					"picklistValues": [
+						{
+							"defaultValue": true,
+							"controllingValues": [],
+							"label": "New Sales",
+							"isActive": true,
+							"value": "New Sales"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Renewal Sale",
+							"isActive": true,
+							"value": "Renewal Sale"
+						}
+					],
+					"filterable": true,
+					"updateable": true,
+					"defaultValue": "3000000000293",
+					"custom": true,
+					"precision": 0,
+					"length": 100,
+					"description": "",
+					"scale": 0,
+					"nameField": false,
+					"label": "Opportunity Type",
+					"type": "picklist",
+					"nillable": false,
+					"restrictedPicklist": true,
+					"createable": true,
+					"name": "Opportunity_Type__c",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": true,
+					"custom": false,
+					"precision": 0,
+					"length": 0,
+					"description": "This is the ID of the user who currently owns this opportunity.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Opportunity Owner",
+					"type": "reference",
+					"referenceTo": "User",
+					"nillable": false,
+					"relationshipName": "Owner",
+					"restrictedPicklist": false,
+					"createable": true,
+					"name": "OwnerId",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": true,
+					"custom": false,
+					"precision": 0,
+					"length": 0,
+					"description": "This is the ID of the quote that is considered to be the primary quote.",
+					"scale": 0,
+					"nameField": false,
+					"label": "Primary Quote Id",
+					"type": "reference",
+					"referenceTo": "Quote",
+					"nillable": true,
+					"relationshipName": "PrimaryQuote",
+					"restrictedPicklist": false,
+					"createable": false,
+					"name": "PrimaryQuoteId",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": true,
+					"custom": true,
+					"precision": 5,
+					"length": 0,
+					"description": "",
+					"scale": 2,
+					"nameField": false,
+					"label": "Probability %",
+					"type": "percent",
+					"nillable": true,
+					"restrictedPicklist": false,
+					"createable": true,
+					"name": "Probability_Percent__c",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": true,
+					"custom": true,
+					"precision": 18,
+					"length": 0,
+					"description": "",
+					"scale": 2,
+					"nameField": false,
+					"label": "Revenue",
+					"type": "currency",
+					"nillable": true,
+					"restrictedPicklist": false,
+					"createable": true,
+					"name": "Revenue__c",
+					"digits": 0
+				},
+				{
+					"filterable": true,
+					"updateable": true,
+					"custom": true,
+					"precision": 0,
+					"length": 50,
+					"description": "",
+					"scale": 0,
+					"nameField": false,
+					"label": "Sales Group",
+					"type": "string",
+					"nillable": true,
+					"restrictedPicklist": false,
+					"createable": true,
+					"name": "Sales_Group__c",
+					"digits": 0
+				},
+				{
+					"picklistValues": [
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Booked",
+							"isActive": true,
+							"value": "Booked"
+						},
+						{
+							"defaultValue": true,
+							"controllingValues": [],
+							"label": "Created",
+							"isActive": true,
+							"value": "Created"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Proposed",
+							"isActive": true,
+							"value": "Proposed"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Forecast",
+							"isActive": true,
+							"value": "Forecast"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Won",
+							"isActive": true,
+							"value": "Won"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Cancelled",
+							"isActive": true,
+							"value": "Cancelled"
+						},
+						{
+							"defaultValue": false,
+							"controllingValues": [],
+							"label": "Lost",
+							"isActive": true,
+							"value": "Lost"
+						}
+					],
+					"filterable": true,
+					"updateable": true,
+					"defaultValue": "3000000000265",
+					"custom": true,
+					"precision": 0,
+					"length": 100,
+					"description": "",
+					"scale": 0,
+					"nameField": false,
+					"label": "Status",
+					"type": "picklist",
+					"nillable": false,
+					"restrictedPicklist": true,
+					"createable": true,
+					"name": "Status__c",
+					"digits": 0
+				}
+			],
+			"triggerable": true,
+			"readAll": false
+		}
+	]
+}

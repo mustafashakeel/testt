@@ -1,0 +1,33 @@
+{
+	"LastModifiedDate": "2017-06-14T21:37:33Z",
+	"AccountId": {
+		"Id": "0ca000012a6ijj2o",
+		"Name": "Salient Solutions"
+	},
+	"Description": "Opportunity for Salient Solutions 2017",
+	"LanguageLocaleKey": "en_US",
+	"Book_Date__c": "2017-06-30T00:00:00Z",
+	"Install_Country__c": "United States",
+	"PrimaryQuoteId": "03a000012a6ijj3j",
+	"IsClosed": false,
+	"ArchivedDate": null,
+	"CrmExportStatus": "NotExported",
+	"Name": "Opportunity for Salient Solutions",
+	"Sales_Group__c": "Eastern",
+	"CreatedById": "09a00000piscd0jk",
+	"OwnerId": "09a00000piscd0jk",
+	"Bill_Date__c": "2017-08-01T00:00:00Z",
+	"ClonedFromId": null,
+	"Country__c": "United States",
+	"Opportunity_Type__c": "New Sales",
+	"LocaleSidKey": "en_US",
+	"Probability_Percent__c": 30,
+	"ExternalId": null,
+	"CurrencyIsoCode": "USD",
+	"IsArchived": false,
+	"CreatedDate": "2017-06-13T22:16:18Z",
+	"Id": "08a000012a6ijj2y",
+	"Revenue__c": 500000,
+	"Status__c": "Created",
+	"LastModifiedById": "09a000012a6ijj0l"
+}
