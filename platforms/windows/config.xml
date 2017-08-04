@@ -15,6 +15,9 @@
     <chcp>
         <config-file url="https://570daa57.ngrok.io/chcp.json" />
     </chcp>
+    <platform name="windows">
+        <preference name="windows-target-version" value="10.0" />
+    </platform>
     <preference name="loadUrlTimeoutValue" value="60000" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
@@ -27,5 +30,5 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
 
-    
+
 </widget>
