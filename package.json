@@ -35,6 +35,7 @@
         "cordova-plugin-statusbar": "^2.2.2",
         "cordova-plugin-whitelist": "^1.3.1",
         "cordova-sqlite-storage": "^2.0.4",
+        "cordova-windows": "^5.0.0",
         "ionic-angular": "3.2.0",
         "ionic-plugin-keyboard": "^2.2.1",
         "ionicons": "3.0.0",
@@ -44,8 +45,9 @@
     },
     "devDependencies": {
         "@ionic/app-scripts": "1.3.7",
-        "@ionic/cli-plugin-cordova": "1.0.0",
-        "@ionic/cli-plugin-ionic-angular": "1.0.0",
+        "@ionic/cli-plugin-cordova": "1.6.2",
+        "@ionic/cli-plugin-ionic-angular": "1.4.1",
+        "ionic": "3.7.0",
         "typescript": "2.2.1"
     },
     "description": "An Ionic project",
@@ -62,7 +64,8 @@
         },
         "platforms": [
             "android",
-            "ios"
+            "ios",
+            "windows"
         ]
     }
 }

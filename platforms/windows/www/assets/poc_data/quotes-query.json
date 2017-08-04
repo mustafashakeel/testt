@@ -15,7 +15,8 @@
 			"TotalAmount": 319887,
 			"FormattedId": "194403",
 			"CurrencyIsoCode": "USD",
-			"Name": "Quote for Salient Solutions"
+			"Name": "Quote for Salient Solutions",
+			"LastModifiedDate":"2017-06-12T22:35:21Z"
 		},
 		{
 			"OpportunityId": {
@@ -31,7 +32,8 @@
 			"TotalAmount": 252500,
 			"FormattedId": "194403-1",
 			"CurrencyIsoCode": "USD",
-			"Name": "Quote for Salient Solutions (2)"
+			"Name": "Quote for Salient Solutions (2)",
+			"LastModifiedDate":"2017-06-11T22:35:21Z"
 		},
 		{
 			"OpportunityId": {
@@ -47,7 +49,8 @@
 			"TotalAmount": 0,
 			"FormattedId": "194405",
 			"CurrencyIsoCode": "USD",
-			"Name": "Quote for Gibson"
+			"Name": "Quote for Gibson",
+			"LastModifiedDate":"2017-06-11T22:35:21Z"
 		},
 		{
 			"OpportunityId": {
@@ -63,7 +66,8 @@
 			"TotalAmount": 0,
 			"FormattedId": "194406",
 			"CurrencyIsoCode": "USD",
-			"Name": "Quote for Torphy"
+			"Name": "Quote for Torphy",
+			"LastModifiedDate":"2017-06-10T22:35:21Z"
 		},
 		{
 			"OpportunityId": {
@@ -79,7 +83,8 @@
 			"TotalAmount": 0,
 			"FormattedId": "194407",
 			"CurrencyIsoCode": "USD",
-			"Name": "Quote for Renner"
+			"Name": "Quote for Renner",
+			"LastModifiedDate":"2017-06-09T22:35:21Z"
 		},
 		{
 			"OpportunityId": {
@@ -95,7 +100,8 @@
 			"TotalAmount": 0,
 			"FormattedId": "194408",
 			"CurrencyIsoCode": "EUR",
-			"Name": "Quote for Fortuna"
+			"Name": "Quote for Fortuna",
+			"LastModifiedDate":"2017-06-08T22:35:21Z"
 		},
 		{
 			"OpportunityId": {
@@ -111,7 +117,8 @@
 			"TotalAmount": 0,
 			"FormattedId": "194409",
 			"CurrencyIsoCode": "USD",
-			"Name": "Quote for Tatum"
+			"Name": "Quote for Tatum",
+			"LastModifiedDate":"2017-06-08T22:35:21Z"
 		},
 		{
 			"OpportunityId": {
@@ -127,7 +134,8 @@
 			"TotalAmount": 0,
 			"FormattedId": "194410",
 			"CurrencyIsoCode": "USD",
-			"Name": "Quote for Stanton"
+			"Name": "Quote for Stanton",
+			"LastModifiedDate":"2017-06-07T22:35:21Z"
 		},
 		{
 			"OpportunityId": {
@@ -143,7 +151,8 @@
 			"TotalAmount": 81373,
 			"FormattedId": "194404",
 			"CurrencyIsoCode": "USD",
-			"Name": "Eastern Division Truck Expansion"
+			"Name": "Eastern Division Truck Expansion",
+			"LastModifiedDate":"2017-06-06T22:35:21Z"
 		}
 	],
 	"done": true

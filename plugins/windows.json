@@ -27,6 +27,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "FPX CPQ"
+        },
+        "cordova-hot-code-push-plugin": {
+            "PACKAGE_NAME": "FPX CPQ"
         }
     },
     "dependent_plugins": {}

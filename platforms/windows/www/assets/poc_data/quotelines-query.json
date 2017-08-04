@@ -5,6 +5,9 @@
 			"Product_Id": "44a000012a6ijj3n",
 			"OrderCode": "359_HD",
 			"Quantity": 1,
+			"ParentQuoteId": {
+				"Id": "03a000012a6ijj3j"
+			},
 			"fpRules": {
 				"canCustomizeAfterUpdate": true,
 				"updateVersionReleaseNoteShort": "",
@@ -24,6 +27,9 @@
 			"Product_Id": "44a000012a6ijj84",
 			"OrderCode": "359_HD",
 			"Quantity": 2,
+			"ParentQuoteId": {
+				"Id": "03a000012a6ijj3j"
+			},
 			"fpRules": {
 				"canCustomizeAfterUpdate": true,
 				"updateVersionReleaseNoteShort": "",
@@ -37,12 +43,16 @@
 			"Id": "07a000012a6ijj86",
 			"CurrencyIsoCode": "USD",
 			"Name": "359 Heavy Duty Upgraded",
+			"CurrencyIsoCode": "USD",
 			"BaseListPrice": 73257
 		},
 		{
 			"Product_Id": "44a000036ujjmkqd",
 			"OrderCode": "195DC_CabOver",
 			"Quantity": 1,
+			"ParentQuoteId": {
+				"Id": "03a000012a6ijj3j"
+			},
 			"fpRules": {
 				"canCustomizeAfterUpdate": true,
 				"updateVersionReleaseNoteShort": "",

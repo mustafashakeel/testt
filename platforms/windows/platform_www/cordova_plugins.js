@@ -88,6 +88,14 @@ module.exports = [
             "cordova.plugins.Keyboard"
         ],
         "runs": true
+    },
+    {
+        "id": "cordova-hot-code-push-plugin.chcp",
+        "file": "plugins/cordova-hot-code-push-plugin/www/chcp.js",
+        "pluginId": "cordova-hot-code-push-plugin",
+        "clobbers": [
+            "chcp"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -99,7 +107,8 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.2.2",
     "cordova-plugin-whitelist": "1.3.1",
     "cordova-sqlite-storage": "2.0.4",
-    "ionic-plugin-keyboard": "2.2.1"
+    "ionic-plugin-keyboard": "2.2.1",
+    "cordova-hot-code-push-plugin": "1.5.3"
 };
 // BOTTOM OF METADATA
 });
